@@ -14,10 +14,6 @@
     right: 0;
     bottom: 0;
 }
-.main-landing-page > section {
-    position: relative;
-    background-color: rgba(0,0,0,0)
-}
 
 
 
@@ -32,10 +28,18 @@
 .main-landing-page > section > .video-wrapper{
     float: left;
     /* margin-left: 10%; */
-
+    
 }
 p::after{
     content:"";
     display:block;
     clear:both;
+}
+.main-landing-page > section {
+    position: relative;
+    background-color: rgba(0,0,0,0)
+}
+.section-links{
+    position: absolute;
+    bottom: 80%;
 }
