@@ -1,0 +1,12 @@
+section#biote {
+    /* background-image: url('../../imgs/biote.webp'); */
+    background-image: url('../../imgs/biote-cert.jpeg');
+    background-repeat: no-repeat;
+
+    /* bac */
+    background-position-y: 0;
+    background-position-x: 90%;
+    background-color: white;
+    /* width: ; */
+
+}

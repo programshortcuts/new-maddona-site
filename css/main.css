@@ -1,0 +1,17 @@
+/* main.css */
+@import url('animations.css');
+@import url('videos.css');
+/* utilities */
+@import url('utilities/backgrounds.css');
+@import url('utilities/colors.css');
+@import url('utilities/effects.css');
+@import url('utilities/layout.css');
+@import url('utilities/position.css');
+@import url('utilities/sizing.css');
+@import url('utilities/spacing.css');
+@import url('utilities/text.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

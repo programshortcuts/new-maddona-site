@@ -1,0 +1,18 @@
+:root {
+    --font-p-clr: rgb(181, 183, 167);
+}
+*{
+    /* background-color: rgba(77, 76, 76, 0.869); */
+}
+#canvas{
+    /* border: 1px solid orange; */
+}
+.page-wrapper >  .nav-menu > ul > li{
+    color: var(--font-p-clr);
+}
+
+.main-landing-page > section,
+.main-landing-page > article {
+    background-color: rgb(0,0,0,0) !important;
+    /* background-color: cadetblue !important; */
+}

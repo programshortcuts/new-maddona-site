@@ -1,0 +1,15 @@
+.page-wrapper > .nav-menu > ul{
+    width: 100%;
+}
+
+.page-wrapper {
+    position: fixed;
+    height: 100vh;
+}
+.main-landing-page > section {
+    height: 20vh;
+}
+.main-landing-page > section > img{
+    max-width: 120px;
+    max-height: 100px;
+}

@@ -1,0 +1,54 @@
+/* layout.css */
+.page-wrapper {
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
+}
+.page-wrapper > .page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.page-wrapper >  .main-landing-page{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.page-wrapper >  .main-landing-page > section > *{
+    flex-basis: 45%;
+}
+
+.page-wrapper > .nav-menu {
+    /* border: 1px solid blue; */
+    flex-basis: 100%;
+    flex-grow: 1;
+    width: 100%;
+    border: 1px solid magenta
+}
+.nav-menu > ul{
+    
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+    
+}
+.nav-menu > ul>li{
+    flex-basis: 20%;
+}
+
+
+.main-landing-page > section {
+    border: 1px solid magenta
+}
+.main-landing-page > section {
+}
+ section  > p{
+    /* display: inline-flex; */
+    /* display: block; */
+    width: 80%;
+}
+.video-wrapper{
+    float:left;
+    margin: 0 20px 20px 0;
+    margin: 10% 20px 20px 0;
+    max-width: 560px;
+    
+}
