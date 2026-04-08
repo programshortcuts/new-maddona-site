@@ -1,15 +1,6 @@
 /* animations.css */
-#canvas{
-    /* border: 1px solid orange;
-    width: 50%;
-    height: 50vh; */
-    
-}
-.container {
-  /* position: relative; */
-  width: 400px;
-  height: 400px;
-}
+
+
 .text, .logo {
   /* position: absolute; */
   width: 100%;
@@ -18,13 +9,13 @@
 }
 
 .logo {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .container:hover .text {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .container:hover .logo {
-  opacity: 1;
+  /* opacity: 1; */
 }
