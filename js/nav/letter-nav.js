@@ -2,12 +2,10 @@
 export function initLetterNav({
     container = document,
 } = {}) {
-
     if (!container) {
         console.warn('initLetterNav: container not found');
         return;
     }
-
     let lastLetterPressed = null;
     document.addEventListener('keydown', (e) => {
         // Ignore typing fields
@@ -96,29 +94,17 @@ export function initLetterNav({
 export function isActuallyVisible(el) {
     if (!el) return false;
     // 1. Sidebar collapsed → block ALL sidebar descendants
-    // if (
-    //     container?.classList.contains('collapsed') &&
-    //     el.closest('.side-bar')
-    // ) {
-    //     return false;
-    // }
-
+    
     // 2. CSS visibility checks
     const style = getComputedStyle(el);
-    if (
-        style.display === 'none' ||
-        style.visibility === 'hidden' ||
-        style.opacity === '0'
-    ) {
+    if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') { 
         return false;
     }
-
     // 3. Zero-size or clipped
     const rect = el.getBoundingClientRect();
     if (rect.width === 0 || rect.height === 0) {
         return false;
     }
-
     // 4. Any hidden ancestor (dropdowns, containers, etc.)
     let parent = el.parentElement;
     while (parent) {
@@ -128,6 +114,5 @@ export function isActuallyVisible(el) {
         }
         parent = parent.parentElement;
     }
-
     return true;
 }
