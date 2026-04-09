@@ -9,10 +9,13 @@ export function initDropDown(){
         const content = section.querySelector('.content')
         if(e.type == 'click'){
             content.classList.toggle('hide')
-
+            
         }
         if(e.type == 'keydown'){
-            
+            const key = e.key.toLowerCase()
+            if(key === 'enter'){
+                content.classList.toggle('hide')
+            }
         }
         
 

@@ -17,10 +17,10 @@ function initMain(){
         })
     }
 }
-
-
 initMain()
-
 function initGlobalListeners(){
-    
+    addEventListener('keydown', e =>{
+        initDropDown()
+    })
 }
+initGlobalListeners()

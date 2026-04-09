@@ -22,7 +22,6 @@ export function initLetterNav({
             // If element is NOT an anchor, use its ID  
             // If anchor has ID, go to ID[0]
             if(el.tagName === "IMG"){
-                console.log(el.getAttribute('alt'))
                 const alt = el.getAttribute('alt')
                 return alt[0]
             }
