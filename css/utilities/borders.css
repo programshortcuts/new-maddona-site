@@ -4,6 +4,7 @@
 
 section > .section-logo-wrapper{
     border: 1px solid black
+    border-radius: 8px;
 }
 
 section {

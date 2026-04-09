@@ -11,7 +11,10 @@
 .page-header .tel-num{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
-
+    text-decoration: none;
+}
+a.tel-num:visited{
+    color: var(--font-p-clr);
 }
 .nav-menu {
     font-size: 1.4rem;

@@ -29,8 +29,9 @@ section>.content>.section-logo-wrapper {
     height: 100%;
 }
 .section > .section-logo-wrapper{
-    max-height: 120px !important;
     border-radius: 8px;
-    max-width: 120px  !important;
-    /* border: 10px solid red */
+    height: 120px;
+        width: 120px;
+        max-height: 120px !important;
+        max-width: 120px !important;
 }
