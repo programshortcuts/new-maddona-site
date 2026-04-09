@@ -18,3 +18,6 @@ section p{
 section iframe{
     margin-right: 1%;
 }
+.animation-container #canvas{
+    margin-top: 5%;
+}
