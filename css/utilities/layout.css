@@ -39,12 +39,11 @@ section > iframe{
     float: left;
     
 }
-/* section > .video-wrapper::after{ */
 section::after{
     content: "";
     display: block;
     clear: both;
 }
-.clear {
-    /* clear: both; */
+#botoxAndFillers > .section-logo-wrapper{
+    float: left;
 }
