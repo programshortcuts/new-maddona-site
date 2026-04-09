@@ -16,13 +16,18 @@ export function initLetterNav({
         const key = e.key.toLowerCase()
         let target
         if (e.metaKey) return
-        const allEls = [...document.querySelectorAll('ul > li > a, .page-title, img, iframe, .section-title')].filter(el => {
+        const allEls = [...document.querySelectorAll('ul > li > a, .page-title, img, iframe, .section-title,#mdvipImgLink')].filter(el => {
             // if (el.id === 'mainTargetDiv') return true
             return isActuallyVisible(el)
         })
         const firstAlpha = el => {
             // If element is NOT an anchor, use its ID  
             // If anchor has ID, go to ID[0]
+            if(el.tagName === "IMG"){
+                console.log(el.getAttribute('alt'))
+                const alt = el.getAttribute('alt')
+                return alt[0]
+            }
             if(el.id){
                 return el.id[0].toLowerCase()
             } else {

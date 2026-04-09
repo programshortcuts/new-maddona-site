@@ -18,7 +18,13 @@
 .page-wrapper >  .nav-menu > ul > li a{
     color: var(--font-p-clr);
 }
-
+#mdvipImgLink{
+    background-color: red;
+    padding: 2%;
+    height: 10vh;
+    width: 25vh;
+    border-radius: 8px;
+}
 .r{
     color: red;
 }

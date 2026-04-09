@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/animation.js" defer></script>
     <script type="module" src="js/main-script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="page-wrapper">
@@ -24,18 +27,7 @@
                 <img id="target" src="./imgs/MadMediSpa-sihlouette.png" style="display:none;">
             </div>     -->
         </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="home.html" rel="noopener noreferrer">
-                    Home</a></li>
-                <li><a   href="index.html" rel="noopener noreferrer">
-                    Medical Spa Services</a></li>
-                <li><a href="index.html" rel="noopener noreferrer">
-                    Products</a></li>
-                <li><a href="contact.html" rel="noopener noreferrer">
-                    Contact</a></li>
-            </ul>
-        </nav> 
+        
         <div class="main-landing-page">
             <div class="med-spa-serv-container">
                 <section id="bioHormoneReplacement">
@@ -68,12 +60,51 @@
                         <a href="index.html" class="more-info">pricing</a>
                         
                     </p>
-                    <div class="google-reviews">
-                        <h3>**google reviews here(related ones to bio hormone replace</h3>
-                        <p>
-                            **put google reviews in carasel here that have testimony related to the biote
-                        </p>
-                    </div>
+                    <section class="reviews-carousel">
+                        <span class="r"><strong>*** These are fake for now****</strong></span>
+                        <h2>What Our Clients Say</h2>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <p>"Amazing service! Highly recommend Madonna Medical Spa."</p>
+                                    <div class="review-author">
+                                        <span>Jane D.</span>
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <p>"Friendly staff and professional treatments. Love it!"</p>
+                                    <div class="review-author">
+                                        <span>John S.</span>
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <p>"Best spa experience ever. The team is fantastic."</p>
+                                    <div class="review-author">
+                                        <span>Mary K.</span>
+                                        <span class="stars">★★★★☆</span>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Optional navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                    
+                            <!-- Pagination dots -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </section>
+                    <p class="more-info-links">
+                        <a href="index.html" class="more-info">more info</a>
+                        <a href="index.html" class="more-info">pricing</a>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quasi excepturi quis mollitia veniam doloremque
+                        dolor ducimus ea qui, rerum harum repudiandae natus. Modi id impedit quidem itaque numquam non!
+                    </p>
                     
     
                 </section>
@@ -167,7 +198,19 @@
                 <span class="x-graphic" aria-hidden="true"><i class="x-icon x-graphic-child x-graphic-icon x-graphic-primary" aria-hidden="true" data-x-icon-b=""></i></span>
             </div>
         </footer>
-                       
+        <!-- We will need to change this name-->
+       <nav class="nav-menu">
+            <ul>
+                <li><a href="home.html" rel="noopener noreferrer">
+                    Home</a></li>
+                <li><a   href="index.html" rel="noopener noreferrer">
+                    Medical Spa Services</a></li>
+                <li><a href="index.html" rel="noopener noreferrer">
+                    Products</a></li>
+                <li><a href="contact.html" rel="noopener noreferrer">
+                    Contact</a></li>
+            </ul>
+        </nav>                 
     </div>
 </body>
 </html>
