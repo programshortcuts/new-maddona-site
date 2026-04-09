@@ -3,3 +3,14 @@
     /* position: fixed; */
     /* bottom: 0; */
 }
+.animation-container{
+    /* border: 2px solid magenta; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+}
+.animation-container #canvas{
+
+    background-color: rgba(0,0,0,0);
+}
