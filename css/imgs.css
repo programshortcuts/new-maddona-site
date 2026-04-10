@@ -14,5 +14,9 @@ section .img-wrapper > img{
 }
 section:hover .img-wrapper > img{
     filter: grayscale(0);
-    border: 2px solid red
+}
+
+.section-title:active ~ .img-wrapper>img {
+    filter: grayscale(0);
+
 }

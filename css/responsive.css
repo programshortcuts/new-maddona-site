@@ -1,9 +1,9 @@
 /* responsive.css */
 @media screen and (max-width:620px) {
     section > .section-logo-wrapper{
-        height: 120px;
-        width: 120px;
-        max-height: 120px !important;
-        max-width: 120px !important;
+        /* height: 120px; */
+        /* width: 120px; */
+        /* max-height: 120px !important; */
+        /* max-width: 120px  !important; */
     }
 }

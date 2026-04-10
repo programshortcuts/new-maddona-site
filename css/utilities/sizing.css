@@ -15,19 +15,21 @@ section > .content > .video-wrapper{
     height: 100%;
 }
 #botoxAndFillers{
-    min-height: 20vh;
+    /* min-height: 20vh; */
 }
 section>.content>.img-wrapper {
     border-radius: 20px;
-    min-width: 100px;
-    max-width: 120px;
+    /* min-width: 100px; */
+    /* max-width: 120px; */
 }
 .img-wrapper img {
     width: 100%;
     height: 100%;
 }
 .section .img-wrapper{
-    max-height: 120px !important;
     border-radius: 8px;
-    max-width: 120px  !important;
+    width:      20px  !important;
+    height:     20px  !important;
+    max-width:  20px !important;
+    max-height: 20px !important;
 }

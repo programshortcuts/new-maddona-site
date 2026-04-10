@@ -108,6 +108,7 @@ export function initLetterNav({
         }
         target = matching[newIndex]
         target?.focus()
+        target?.scrollIntoView({behavior:'instant', block:'center'})
         lastLetterPressed = key
     });
 }
