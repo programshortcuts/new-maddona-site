@@ -27,6 +27,8 @@ section iframe{
 .info-contact{
     padding: 5%;
 }
-#hairRestoration h2{
-    margin-left: 15%;
+#hairRestoration h2,
+#facialRestoration h2
+{
+    margin-left: 5%;
 }
