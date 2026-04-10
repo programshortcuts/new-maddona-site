@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/lib/purify.min.js"></script>
     <!-- <script src="js/visuals/animation.js" defer></script> -->
-    <script src="js/visuals/carousel.js" defer></script>
     <script type="module" src="js/main-script.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+    <!-- <script src="js/visuals/carousel.js" defer></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- script-src 'self' https://www.youtube.com https://www.gstatic.com; -->
-    <meta http-equiv="Content-Security-Policy" content="
-    frame-src https://www.youtube.com;
-    ">
+        <meta http-equiv="Content-Security-Policy" content="
+            frame-src https://www.youtube.com;
+            default-src 'self';
+            script-src 'self' 'unsafe-inline';
+            style-src 'self';
+            img-src 'self' data:;
+            object-src 'none';
+            base-uri 'none';
+        ">
 </head>
 <body>
     <div class="page-wrapper">
@@ -229,7 +236,7 @@
                     Home</a></li>
                 <li><a   href="index.html" rel="noopener noreferrer">
                     Medical Spa Services</a></li>
-                <li><a href="index.html" rel="noopener noreferrer">
+                <li><a  href="products.html" rel="noopener noreferrer">
                     Products</a></li>
                 <li><a href="contact.html" rel="noopener noreferrer">
                     Contact</a></li>
