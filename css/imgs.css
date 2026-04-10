@@ -1,5 +1,6 @@
+/* imgs.css */
 section#botoxAndFillers {
-    background-image: url('../../imgs/botox-filler.webp');
+    background-image: url('../imgs/botox-filler.webp');
     background-repeat: no-repeat;
     background-position-y: 10%;
     background-position-x: 0%;
