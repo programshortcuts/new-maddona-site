@@ -6,7 +6,6 @@ section > .content > .video-wrapper{
     width: fit-content;
     height: fit-content;
 }
-
 .nav-menu{
     width: 100%;
     height: 15vh;
@@ -18,20 +17,17 @@ section > .content > .video-wrapper{
 #botoxAndFillers{
     min-height: 20vh;
 }
-section>.content>.section-logo-wrapper {
+section>.content>.img-wrapper {
     border-radius: 20px;
     min-width: 100px;
     max-width: 120px;
 }
-
-.section-logo-wrapper>img {
+.img-wrapper img {
     width: 100%;
     height: 100%;
 }
-.section > .section-logo-wrapper{
+.section .img-wrapper{
+    max-height: 120px !important;
     border-radius: 8px;
-    height: 120px;
-        width: 120px;
-        max-height: 120px !important;
-        max-width: 120px !important;
+    max-width: 120px  !important;
 }

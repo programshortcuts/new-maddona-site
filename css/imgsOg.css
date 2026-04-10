@@ -1,0 +1,35 @@
+/* imgs.css */
+#hairRestoration > .section-logo-wrapper img{
+    filter: grayscale(80%);
+}
+.section-logo-wrapper img {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+}
+
+.section-logo-wrapper img:hover {
+filter: grayscale(0%);
+}
+
+section#botoxAndFillers {
+    background-image: url('../../imgs/botox-filler.webp');
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position-x: 0%;
+    /* background-color: white; */
+    border: 1px solid black;
+    filter: grayscale(10%);
+    transition: filter 0.4s ease;
+}
+section#botoxAndFillers:hover {
+    filter: grayscale(0%);
+}
+.section-logo-wrapper img {
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+}
+
+/* 👇 key change */
+.section:hover .section-logo-wrapper img {
+    filter: grayscale(0%);
+}

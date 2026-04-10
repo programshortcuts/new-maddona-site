@@ -36,7 +36,7 @@
     display: inline-flex;
 }
 
-section>.content>.section-logo-wrapper {
+section>.content>.img-wrapper {
     float: right;
 }
 section>.content>iframe {
@@ -47,12 +47,12 @@ section::after {
     display: block;
     clear: both;
 }
-#botoxAndFillers>.section-logo-wrapper {
+#botoxAndFillers>.img-wrapper {
     float: left !important;
 }
-#hairRestoration>.section-logo-wrapper {
+#hairRestoration>.img-wrapper {
     float: left;
 }
-#vaginalRejuvenation>.section-logo-wrapper {
+#vaginalRejuvenation>.img-wrapper {
     float: right;
 }

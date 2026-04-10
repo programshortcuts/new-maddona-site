@@ -1,20 +1,20 @@
+/* backgrounds.css */
 .nav-menu{
     border: 1px solid black
 }
-
-section > .section-logo-wrapper{
-    border: 1px solid black
-    border-radius: 8px;
+.section{
+    border-radius: 3px;
 }
+.section-logo-wrapper img{
+    border-radius: 7px;
 
-section {
-    /* border: 1px solid black; */
-    /* border-radius: 4px; */
+}
+section .img-wrapper{
+    border-radius: 8px;
 }
 section iframe{
     border: 1px solid black;
     border-radius: 8px;
-
 }
 .google-reviews{
     border: 1px solid red;
