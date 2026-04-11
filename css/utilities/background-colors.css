@@ -22,4 +22,6 @@
 .mobile-header-nav {
     background-color: var(--bg-clr);
 }
-
+.more-info-links button{
+    background: white;
+}

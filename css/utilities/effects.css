@@ -4,6 +4,10 @@ a:focus{
     outline: none;
     border: 1px solid black;
 }            
+section#botoxAndFillers:hover {
+    filter: saturate(1.2);
+    filter: brightness(1.2);
+}
 .section-title:active~.img-wrapper>img {
     filter: grayscale(0);
 }
