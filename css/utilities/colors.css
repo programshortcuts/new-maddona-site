@@ -10,8 +10,8 @@
     color: var(--font-p-clr);   
 }
 .tel-num{
+    /* color: inherit; */
     color: var(--font-p-clr);
-    color: inherit;
     text-decoration: none;
     /* Optional: removes underline */
 }
