@@ -56,11 +56,10 @@ export async function injectPage(href){
     const doc = parser.parseFromString(html, 'text/html')
 
     // Grab the actual page content
-    const newContent =
-    doc.querySelector(".main-landing-page") ||
-    doc.querySelector("body > *") 
+    const newContent = doc.querySelector(".main-landing-page");
+
     if (!newContent) {
-        throw new Error("No Valid page content found")
+        throw new Error(`Page missing .main-landing-page wrapper: ${href}`);
     }
 
     // ✅ Sanitize before injecting

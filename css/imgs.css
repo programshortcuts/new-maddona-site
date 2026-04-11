@@ -1,17 +1,5 @@
 /* imgs.css */
-section#botoxAndFillers {
-    background-image: url('../pages/medical-spa-services/media/botox-filler.webp');
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    background-position-x: 5%;
-}
-.info-contact {
-    background-image: url('../imgs/rustic\ rockymoutains-1024.JPEG');
-    background-repeat: no-repeat;
-    background-position-y: 10%;
-    background-position-x: 0%;
-    filter: grayscale(50%);
-}
+
 
 section#botoxAndFillers:hover{
     filter: saturate(1.2);
