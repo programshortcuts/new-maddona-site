@@ -3,6 +3,9 @@
     border: 1px solid black;
     border-bottom: none;
 }
+#mdvipImgLink {
+    border-radius: 8px;
+}
 .section{
     border-radius: 3px;
 }
@@ -20,6 +23,6 @@ section iframe{
     border-radius: 6px;
 }
 section#botoxAndFillers {
-    border-right: solid 4px var(--bg-clr);
-    
+    /* border-right: solid 4px var(--bg-clr);    */
+    /* border-right: 1vw solid var(--bg-clr) */
 }

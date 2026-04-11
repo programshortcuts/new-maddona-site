@@ -4,7 +4,3 @@ a:focus{
     outline: none;
     border: 1px solid black;
 }            
-
-.section-title:active~.img-wrapper>img {
-    filter: grayscale(0);
-}

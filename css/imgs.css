@@ -2,11 +2,8 @@
 section#botoxAndFillers {
     background-image: url('../pages/medical-spa-services/media/botox-filler.webp');
     background-repeat: no-repeat;
-    /* background-position-y: 10%; */
-    /* background-position-x: 0%; */
     background-position-y: 50%;
-    background-position-x: 4%;
-    /* background-color: white; */
+    background-position-x: 5%;
 }
 .info-contact {
     background-image: url('../imgs/rustic\ rockymoutains-1024.JPEG');
@@ -27,8 +24,6 @@ section:hover > .content .img-wrapper > img{
     filter: grayscale(0);
 }
 
-
-#officeImg{
-    filter: grayscale(50%);
-    border-radius: 10px;
+.section-title:active ~ .img-wrapper>img {
+    filter: grayscale(0);
 }

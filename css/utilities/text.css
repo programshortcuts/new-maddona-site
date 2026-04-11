@@ -30,8 +30,10 @@ a.tel-num:visited{
     font-size: .9rem;
 }
 
-.medical-spa-services-container > section > h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.med-spa-serv-container > .section > h2 > a {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* color: blue !important; */
     letter-spacing: 20%;
 
 }
