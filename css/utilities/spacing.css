@@ -3,18 +3,23 @@
     margin: 0 2%;
     padding-bottom: 18%;
 }
-section {
+.section {
     margin-top: 1%;
-    padding: 3.5%;
+    padding-top: 1.25rem;
+    padding-bottom: .5rem;
+    /* padding: 3.5%; */
     padding-left: 0;
 }
-section p{
+.section:nth-child(odd) {
+    margin-top: -2%;
+}
+.section p{
     padding: 0 2%;
     padding-top: 3%;
     padding-bottom: 1%;
     line-height: 1.6;
 }
-section iframe{
+.section iframe{
     margin-right: 2%;
 }
 #mdvipImgLink {
@@ -31,8 +36,6 @@ section iframe{
 .info-contact{
     padding: 5%;
 }
-#hairRestoration h2,
-#facialRestoration h2
-{
-    /* margin-left: 2%; */
+.med-spa-serv-container>.section>h2>a.section-title {
+    padding-left: 4%;
 }

@@ -30,24 +30,17 @@ a.tel-num:visited{
     font-size: .9rem;
 }
 
-.med-spa-serv-container > .section > h2 > a {
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    /* color: blue !important; */
+.med-spa-serv-container > .section > h2 > a.section-title {
     letter-spacing: 20%;
-
+    text-decoration: none;   
 }
-
  article > p,
  section > p{
     font-family: Arial, Helvetica, sans-serif;
     
     font-weight: 500;
 }
-.section-title {
-    text-decoration: none;
-    
-}
+
 
 .info-contact h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
