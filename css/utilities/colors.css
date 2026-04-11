@@ -9,11 +9,10 @@
 .page-title{
     color: var(--font-p-clr);   
 }
-.tel-num{
-    /* color: inherit; */
-    color: var(--font-p-clr);
-    text-decoration: none;
-    /* Optional: removes underline */
+.tel-num {
+    color: var(--font-p-clr) !important;
+    text-decoration: none !important;
+    -webkit-text-fill-color: var(--font-p-clr);
 }
 
 .section p{
