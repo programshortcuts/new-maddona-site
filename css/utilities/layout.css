@@ -10,7 +10,7 @@
 }
 .main-landing-page {
     overflow: hidden;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 .hide {
     display: none;
