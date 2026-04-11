@@ -12,16 +12,7 @@ section#botoxAndFillers:hover {
 .section-title:active~.img-wrapper>img {
     filter: grayscale(0);
 }
-
-
-/* section.checked .img-wrapper>img,
-.img-wrapper>img:hover {
-    filter: grayscale(0);   
-}
-.section-title:active~.img-wrapper>img {
-    filter: grayscale(0);
-}
-*/
 section.colored .img-wrapper > img{
     filter: grayscale(0) !important;
 }
+
