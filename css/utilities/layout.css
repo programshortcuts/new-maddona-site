@@ -41,6 +41,7 @@
 }
 .mobile-header-nav ul li {
     flex-basis: 25%;
+    height: 50%;
 }
 .mobile-header-nav ul li a {
     display: inline-flex;

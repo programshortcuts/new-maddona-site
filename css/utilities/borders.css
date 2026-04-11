@@ -2,6 +2,7 @@
 .mobile-header-nav{
     border: 1px solid black;
     border-bottom: none;
+    border-radius: 8px;
 }
 #mdvipImgLink {
     border-radius: 8px;
