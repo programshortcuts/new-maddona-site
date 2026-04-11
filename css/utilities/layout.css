@@ -73,9 +73,9 @@ section::after {
 #vaginalRejuvenation>.img-wrapper {
     float: left;
 }
-.content .more-info-links {
+.more-info-links {
     display: flex;
 }
-.content .more-info-links > button{
+.more-info-links > button{
     flex-basis: 40%;
 }

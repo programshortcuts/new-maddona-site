@@ -23,7 +23,10 @@ body,
 .mobile-header-nav {
     background-color: var(--bg-clr);
 }
-.more-info-links button{
+
+.more-info-links > button{
     background: white !important;
     /* border: 1px solid orange */
+    /* height: 100%;
+    border: 1px solid black; */
 }

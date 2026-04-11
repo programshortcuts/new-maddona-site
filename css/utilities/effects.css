@@ -1,3 +1,4 @@
+/* effects.css */
 a:active,
 a:focus{
     box-shadow: 0 0  1px 1px  black;
@@ -10,10 +11,11 @@ section#botoxAndFillers:hover {
     filter: brightness(1.2);
 }
 .section-title:active~.img-wrapper>img {
-    filter: grayscale(0) !important;
+    /* filter: grayscale(0) !important; */
 }
 .img-wrapper > img:hover,
 section.colored .img-wrapper > img{
     filter: grayscale(0) !important;
 }
+
 

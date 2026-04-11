@@ -1,4 +1,4 @@
-/* backgrounds.css */
+/* borders.css */
 .mobile-header-nav{
     border: 1px solid black;
     border-bottom: none;
@@ -29,5 +29,5 @@ section#botoxAndFillers {
     border-right: 1vw solid var(--bg-clr)
 }
 .more-info-links > button{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }

@@ -2,11 +2,12 @@
 export function initImageHandling(){
     const sections = document.querySelectorAll('.section')
     const sectionTitles = document.querySelectorAll('.section')
+    const sectionImgs = document.querySelectorAll('.section > img-wrapper > img')
     sections.forEach(el => {
         el.removeEventListener('click',handleImgColors);
         el.addEventListener('click',handleImgColors);
-        el.addEventListener('focusin',handleImgColors);
         
+
     })
     function greyOutSectionImgs(){
         sections.forEach(el => {
@@ -16,15 +17,31 @@ export function initImageHandling(){
         })    
     }
     function handleImgColors(e){
+        
         const section = e.target.closest('.section')
         const img = section.querySelector('img')
-        if(e.type == 'click'){
-            toggleColor(section)
+        console.log('click')
+        
+        if(e.target.classList.contains('section')){
+            greyOutSectionImgs()
             return
         }
-        if(e.type == 'focusin') {
-            greyOutSectionImgs()
+        if(e.type == 'click'){
+            e.stopPropagation()
             toggleColor(section)
+            console.log(section)
+            return
+        }
+        if(e.type == 'mouseover') {
+            greyOutSectionImgs()
+            // toggleColor(section)
+            console.log('over')
+            return
+        }
+        if(e.type == 'mousein') {
+            console.log('mouse')
+            greyOutSectionImgs()
+            // toggleColor(section)
             return
         }
         
