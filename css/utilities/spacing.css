@@ -44,3 +44,10 @@
 .address-num-container {
     padding: 5%;
 }
+.more-info-links {
+    padding-right: 2%;
+}
+.more-info-links > button{
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
