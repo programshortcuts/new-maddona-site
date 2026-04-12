@@ -1,8 +1,5 @@
 /* layout.css */
-.social-media-container{
-    display: flex;
-    height: fit-content;
-}
+
 .page-wrapper{
     overflow: hidden;
     overflow-y: scroll;
@@ -81,4 +78,16 @@ section::after {
 }
 .more-info-links > button{
     flex-basis: 24%;
+}
+/* contact styles */
+.social-media-email-container {
+    display: flex;
+    height: fit-content;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container>* {
+    flex-basis: 42%;
 }

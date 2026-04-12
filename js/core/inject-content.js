@@ -9,9 +9,9 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-    "pages/medical-spa-services/medical-spa-services.html";
+    // "pages/medical-spa-services/medical-spa-services.html";
     // "pages/home/home.html";
-    // "pages/contact/contact.html";
+    "pages/contact/contact.html";
 const pageCache = new Map()
 
 export function initInjectContentListeners(){
@@ -69,12 +69,17 @@ export async function injectPage(href){
             'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
             'a', 'section', 'article', 'header', 'footer',
             'iframe', // ✅ ADD THIS
-            'button' // ✅ ADD THIS
+            'button', // ✅ ADD THIS'
+            'img',
+            'canvas',
+            'svg','path','circle','g'
         ],
         ALLOWED_ATTR: [
-            'href', 'src', 'alt', 'class', 'id', 'tabindex',
-            'allow', 'allowfullscreen', 'frameborder' // ✅ ADD THESE
+            'src', 'href', 'class', 'id', 'alt', 'tabindex',
+            'allow', 'allowfullscreen', 'frameborder', // ✅ ADD THESE
+            'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r'
         ]
+
     })
     initImageHandling()
     // initDropDown()   

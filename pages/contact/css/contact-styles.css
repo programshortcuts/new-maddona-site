@@ -1,12 +1,9 @@
+/* contact-styles.css */
 .address-num-container{
     border-right: 1px solid black;
 }
 .contact-container{
     display: flex;
     padding: 4% 1%;
-    /* padding-top: 5%; */
     border: 1px solid black;
-}
-.contact-container > *{
-    flex-basis: 50%;
 }

@@ -8,7 +8,6 @@
     border-radius: 8px;
 }
 .section{
-    /* border: 1px solid blue; */
     border-radius: 3px;
 }
 .img-wrapper img{
@@ -35,4 +34,7 @@ section#botoxAndFillers {
 .more-info-links>button {
     border: 1px solid black;
     border-radius: 5px;
+}
+.animation-container {
+    border: 1px solid blue
 }

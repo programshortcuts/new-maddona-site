@@ -43,12 +43,22 @@ a.tel-num:visited{
     font-size: 1.19rem;
     text-decoration: none;
 }
-
 .more-info-links button,
 .section p {
-    /* color: blue; */
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
+}
+/* contact styles */
+
+.address-box h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 560;
+    text-shadow: 1px 1px 1px whitesmoke;
+    font-size: 1.2rem;
+}
+.tel-num-box{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 560;
+    text-shadow: 1px 1px 1px whitesmoke;
+    font-size: 1.2rem;
 }
