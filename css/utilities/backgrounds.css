@@ -12,7 +12,7 @@ section#botoxAndFillers {
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 0%;
-    background-size: 189%;
+    /* background-size: 189%; */
     filter: grayscale(100%);
 }
 

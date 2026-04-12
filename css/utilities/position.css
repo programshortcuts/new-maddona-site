@@ -3,14 +3,12 @@
     position: relative;
     z-index: 1;
 }
-.page-container > .section {
-}
-.animation-container{
+
+.animation-container {
     position: absolute;
-    z-index: 4;
-    left: 50%;
     z-index: 0;
-    top: 0;
+    left: 50%;
+    top: 30%;
 }
 .mobile-header-nav {
     position: fixed;
