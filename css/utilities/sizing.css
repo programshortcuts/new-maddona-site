@@ -34,7 +34,6 @@ section > .content > .video-wrapper{
 }
 .more-info-links {
     /* display: flex; */
-    background-color: white;
     font-size: 2rem;
 }
 .more-info-links>button {

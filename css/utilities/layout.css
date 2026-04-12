@@ -72,7 +72,7 @@ section::after {
     float: left;
 }
 .more-info-links {
-    display: block;
+    display: flex;
 }
 .more-info-links > button{
     flex-basis: 40%;

@@ -16,18 +16,5 @@
     position: absolute;
     bottom: 8%;
     z-index: 2;
-    /* left: 0; */
     right: 91%;
-}
-
-
-.more-info-links {
-    position: relative;
-    display: flex;
-}
-
-
-.more-info-links>button {
-    flex-basis: 40%;
-    /* position: absolute; */
 }

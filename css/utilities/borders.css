@@ -28,12 +28,10 @@ section#botoxAndFillers {
     /* border-right: solid 4px var(--bg-clr);    */
     border-right: 1vw solid var(--bg-clr)
 }
-.more-info-links > button{
-    /* border: 1px solid black; */
-}
-#officeImg {
-    /* border: 2px solid blue; */
-}
+
+
+/* home.html */
+
 .more-info-links>button {
     border: 1px solid black;
 }
