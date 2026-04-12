@@ -24,6 +24,10 @@
 
 /* home-styles */
 @import url('../pages/products/css/products-styles.css');
+@import url('../pages/home/css/spacing-home.css');
+/* home-styles */
+@import url('../pages/medical-spa-services/css/layout-med-spa-serv.css');
+@import url('../pages/medical-spa-services/css/spacing-med-spa-serv.css');
 /* contact-styles */
 @import url('../pages/contact/css/contact-styles.css');
 *{

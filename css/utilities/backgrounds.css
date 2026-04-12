@@ -9,7 +9,7 @@
 } */
 section#botoxAndFillers {
     background-image: url('../../pages/medical-spa-services/media/AS-Botox2000.jpg.webp');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position-y: 50%;
     background-position-x: 0%;
     /* background-size: 189%; */

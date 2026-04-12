@@ -50,43 +50,7 @@
 }
 
 
-section>.content>.img-wrapper {
-    float: right;
-}
-section>.content>iframe {
-    float: left;
-}
-section::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-#botoxAndFillers>.img-wrapper {
-    float: left !important;
-}
-#hairRestoration>.img-wrapper {
-    float: right;
-}
-#microNeedling>.img-wrapper {
-    float: left;
-}
-#facialRestoration>.img-wrapper {
-    float: right;
-}
-#vaginalRejuvenation>.img-wrapper {
-    float: left;
-}
-.section .more-info-links {
-    display: none;
-}
-.section.colored .more-info-links {
-    display: flex;
-    gap: 1%;
-    justify-content: flex-end;
-}
-.more-info-links > button{
-    flex-basis: 24%;
-}
+
 /* contact styles */
 .social-media-email-container {
     display: flex;
@@ -100,10 +64,9 @@ section::after {
     flex-basis: 42%;
 }
 
+
 /* home styles */
-.home-page-header{
-    
-}
+
 .home-page-header>.address-num-container img {
     float: right;
 }
