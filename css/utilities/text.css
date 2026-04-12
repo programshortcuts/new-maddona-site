@@ -42,12 +42,12 @@ a.tel-num:visited{
  section > p{
     font-family: Arial, Helvetica, sans-serif;
 }
-.info-contact h2{
+.address-num-container h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 1px 0px 2px  black ;
     font-weight: 500;
 }
-.info-contact p{
+.address-num-container p{
     /* font-family: ; */
     text-shadow: 1px 0px 2px  black ;
     box-shadow: 1px 1px 4px black;

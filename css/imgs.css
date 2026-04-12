@@ -1,6 +1,10 @@
 /* imgs.css */
-
 section .img-wrapper > img{
     filter: grayscale(100%);
 }
 
+#officeImg{
+    border-radius: 30px;
+    height: 15vh;
+    width: 35vw;
+}

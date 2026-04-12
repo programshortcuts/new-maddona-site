@@ -1,10 +1,10 @@
-.info-contact{
+.address-num-container{
     border-right: 1px solid black;
 }
 .contact-container{
+    display: flex;
     padding: 4% 1%;
     /* padding-top: 5%; */
-    display: flex;
     border: 1px solid black;
 }
 .contact-container > *{

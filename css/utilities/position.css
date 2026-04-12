@@ -19,3 +19,11 @@
 }
 
 
+.more-info-links {
+    position: relative;
+}
+
+.more-info-links>button {
+    /* flex-basis: 40%; */
+    position: absolute;
+}

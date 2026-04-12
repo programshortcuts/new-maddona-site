@@ -35,9 +35,12 @@
     padding-top: 10%;
     padding-left: 10%;
 }
-.info-contact{
-    padding: 5%;
-}
+
 .med-spa-serv-container>.section>h2>a.section-title {
     padding-left: 4%;
+}
+/* put the below  */
+/* contact css */
+.address-num-container {
+    padding: 5%;
 }

@@ -1,4 +1,6 @@
 /* main.css */
+/* home-styles */
+@import url('../pages/home/css/home-styles.css');
 /* contact-styles */
 @import url('../pages/contact/css/contact-styles.css');
 

@@ -2,15 +2,15 @@
 import { isSafePath } from "./security-utils.js";
 import { maybeInitAnimations } from "../app.js";
 import { initDropDown } from "../ui/drop-down.js";
-import { initImageHandling } from "../visuals/images.js";
+import { initImageHandling } from "../visuals/handleImages.js";
 const mainLandingPage = document.querySelector('.main-landing-page')
 
 if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-    "pages/medical-spa-services/medical-spa-services.html";
-    // "pages/home/home.html";
+    // "pages/medical-spa-services/medical-spa-services.html";
+    "pages/home/home.html";
     // "pages/contact/contact.html";
 const pageCache = new Map()
 
