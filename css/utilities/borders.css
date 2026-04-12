@@ -34,3 +34,6 @@ section#botoxAndFillers {
 #officeImg {
     /* border: 2px solid blue; */
 }
+.more-info-links>button {
+    border: 1px solid black;
+}

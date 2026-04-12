@@ -68,7 +68,8 @@ export async function injectPage(href){
             'img',
             'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
             'a', 'section', 'article', 'header', 'footer',
-            'iframe' // ✅ ADD THIS
+            'iframe', // ✅ ADD THIS
+            'button' // ✅ ADD THIS
         ],
         ALLOWED_ATTR: [
             'href', 'src', 'alt', 'class', 'id', 'tabindex',

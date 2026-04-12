@@ -73,11 +73,7 @@ section::after {
 }
 .more-info-links {
     display: block;
-    background-color: white;
 }
-.more-info-links > *{
-    display: block;
-    border: 1px solid black;
-    font-size: 2rem;
-    /* flex-basis: 40%; */
+.more-info-links > button{
+    flex-basis: 40%;
 }

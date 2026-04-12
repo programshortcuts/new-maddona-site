@@ -23,9 +23,11 @@
 
 .more-info-links {
     position: relative;
+    display: flex;
 }
 
+
 .more-info-links>button {
-    /* flex-basis: 40%; */
-    position: absolute;
+    flex-basis: 40%;
+    /* position: absolute; */
 }
