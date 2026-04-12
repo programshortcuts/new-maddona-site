@@ -1,6 +1,6 @@
 /* position.css */
 .page-container  {
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 .page-container > .section {
