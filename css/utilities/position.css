@@ -1,8 +1,15 @@
 /* position.css */
+.page-container  {
+    position: absolute;
+    z-index: 1;
+}
+.page-container > .section {
+}
 .animation-container{
     position: absolute;
     z-index: 4;
-    right: 0;
+    left: 50%;
+    z-index: 0;
     top: 0;
 }
 .mobile-header-nav {
@@ -16,4 +23,5 @@
     bottom: 8%;
     z-index: 2;
     right: 91%;
+    
 }
