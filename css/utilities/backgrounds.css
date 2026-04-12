@@ -1,12 +1,19 @@
 /* background.css */
-section#botoxAndFillers {
+/* section#botoxAndFillers {
     background-image: url('../../pages/medical-spa-services/media/botox-filler.webp');
     background-repeat: no-repeat;
     background-position-y: 50%;
-    /* background-position-x: 5%; */
-    background-position-x: -2%;
+    background-position-x: 0%;
     filter: saturate(1);
-        filter: brightness(1);
+    filter: brightness(1);
+} */
+section#botoxAndFillers {
+    background-image: url('../../pages/medical-spa-services/media/AS-Botox2000.jpg.webp');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 0%;
+    background-size: 189%;
+    filter: grayscale(100%);
 }
 
 .contact-container > .address-num-container {

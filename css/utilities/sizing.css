@@ -32,14 +32,11 @@ section > .content > .video-wrapper{
     font-size: 3rem;
     color: #1877f2;
 }
-
-
 .more-info-links {
     /* display: flex; */
     background-color: white;
     font-size: 2rem;
 }
-
 .more-info-links>button {
     width: 50%;
     border: 1px solid black;

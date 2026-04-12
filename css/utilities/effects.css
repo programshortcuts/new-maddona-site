@@ -5,11 +5,17 @@ a:focus{
     outline: none;
     border: 1px solid black;
 }            
-section.colored#botoxAndFillers,
+/* section.colored#botoxAndFillers,
 section#botoxAndFillers:hover {
     filter: saturate(1.2);
     filter: brightness(1.2);
+} */
+ 
+section.colored#botoxAndFillers,
+section#botoxAndFillers:hover {
+    filter: grayscale(20%);
 }
+ 
 .section-title:active~.img-wrapper>img {
     /* filter: grayscale(0) !important; */
 }

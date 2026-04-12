@@ -9,8 +9,8 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-    // "pages/medical-spa-services/medical-spa-services.html";
-    "pages/home/home.html";
+    "pages/medical-spa-services/medical-spa-services.html";
+    // "pages/home/home.html";
     // "pages/contact/contact.html";
 const pageCache = new Map()
 
@@ -45,7 +45,7 @@ export async function injectPage(href){
             pageCache.set(href,html)
 
         }
-        // maybeInitAnimations()
+        maybeInitAnimations()
     } catch (err) {
         mainLandingPage.innerHTML =
             `<p style="color:red;">Failed to load page: ${href}</p>`;

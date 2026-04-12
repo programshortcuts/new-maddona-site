@@ -1,6 +1,8 @@
 /* position.css */
 .animation-container{
     position: absolute;
+    z-index: 4;
+    border: 20px solid blue;
     right: 0;
     top: 0;
 }

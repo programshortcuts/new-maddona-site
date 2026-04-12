@@ -30,7 +30,6 @@
 }
 .page-header > .animation-container > #canvas {
 }
-
 .mobile-header-nav {
     display: flex;
 }
@@ -46,7 +45,6 @@
 .mobile-header-nav ul li a {
     display: inline-flex;
 }
-
 section>.content>.img-wrapper {
     float: right;
 }

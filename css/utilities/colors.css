@@ -10,7 +10,6 @@
 .page-title{
     color: var(--font-p-clr);   
 }
-
 .section p{
     
     color: var(--font-p-clr);
@@ -18,9 +17,6 @@
 .mobile-header-nav > ul > li a{
     color: var(--font-p-clr);
 }
-
-
-
  a[x-apple-data-detectors] {
      color: inherit !important;
      text-decoration: none !important;
@@ -28,7 +24,6 @@
      font-family: inherit !important;
      font-weight: inherit !important;
  }
-
  /* Target standard telephone links */
  a[href^="tel"] {
      color: inherit;

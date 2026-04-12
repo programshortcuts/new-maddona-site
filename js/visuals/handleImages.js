@@ -18,10 +18,8 @@ export function initImageHandling(){
         })    
     }
     function handleImgColors(e){
-        
         const section = e.target.closest('.section')
         const img = section.querySelector('img')
-        
         if(e.target.classList.contains('section')){
             greyOutSectionImgs()
             return
