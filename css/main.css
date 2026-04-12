@@ -23,7 +23,7 @@
 @import url('utilities/background-colors.css');
 
 /* home-styles */
-@import url('../pages/home/css/home-styles.css');
+/* @import url('../pages/home/css/home-styles.css'); */
 /* contact-styles */
 @import url('../pages/contact/css/contact-styles.css');
 *{

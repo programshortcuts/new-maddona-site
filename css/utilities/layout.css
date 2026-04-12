@@ -101,6 +101,9 @@ section::after {
 }
 
 /* home styles */
+.home-page-header{
+    
+}
 .home-page-header>.address-num-container img {
     float: right;
 }

@@ -44,7 +44,6 @@
 .address-num-container {
     padding: 8%;
 }
-
 .more-info-links {
     padding-right: 2%;
 }
@@ -52,9 +51,10 @@
     padding-top: .5%;
     padding-bottom: .5%;
 }
-
-
 /* home styles */
+.home-page-header{
+    padding-top: 10%;
+}
 .home-page-header>.address-num-container {
     padding-top: 20%;
 }
