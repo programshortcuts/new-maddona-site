@@ -10,16 +10,25 @@
     display: flex;
     gap: 16px;
 
-    overflow-x: auto;
-    overflow-y: hidden;
-
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
+    /* cursor: grab; */
+    /* scroll-snap-type: x proximity; */
 
     padding: 10px 16px;
 
-    cursor: grab;
-    scroll-snap-type: x proximity;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* 👈 momentum like Apple */
+    scroll-behavior: smooth;
+    touch-action: pan-x; /* 👈 prevents laggy vertical locking */
+}
+.items-container {
+}
+
+.items-container::-webkit-scrollbar {
+    display: none;
 }
 
 .items-container:active {

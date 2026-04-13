@@ -18,6 +18,7 @@ export function initImageHandling(){
         el.addEventListener('focus', greyOutSectionImgs)
     })
     function greyOutSectionImgs(){
+        if(!sections)return
         sections.forEach(el => {
             if(el.classList.contains('colored') ){
                 el.classList.remove('colored')
@@ -26,6 +27,7 @@ export function initImageHandling(){
     }
     function handleImgColors(e){
         const section = e.target.closest('.section')
+        if(!section) return
         const img = section.querySelector('img')
         if(e.target.classList.contains('section') ||
             e.target.classList.contains('drop-down')){
