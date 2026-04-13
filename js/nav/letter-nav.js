@@ -81,7 +81,7 @@ export function initLetterNav({
                 const nextEl = allEls[iAllEls + 1]  // the element directly after
                 // if the previous element matches the letter, go up one
                 if (prevEl && matching.includes(prevEl)) {
-                    newIndex = matching.indexOf(prevEl)
+                    newIndex -= 1
                 } else {
                     // otherwise go to the next matching element after current focus
                     let foundNext = false

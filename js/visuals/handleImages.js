@@ -13,6 +13,8 @@ export function initImageHandling(){
         el.addEventListener('click',handleImgColors);
     })
     sectionTitles.forEach(el => {
+        el.removeEventListener('click',handleImgColors);
+        el.addEventListener('click',handleImgColors);
         el.addEventListener('focus', greyOutSectionImgs)
     })
     function greyOutSectionImgs(){

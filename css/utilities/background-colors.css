@@ -23,7 +23,6 @@ body,
 .mobile-header-nav {
     background-color: var(--bg-clr);
 }
-
 .more-info-links > button{
-    background-color: white;
+    /* background-color: whitesmoke; */
 }

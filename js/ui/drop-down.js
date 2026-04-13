@@ -1,7 +1,7 @@
 // drop-down.js
 export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
-
+    
     dropDowns.forEach(el => {
         // SUPER IMPORTANT 
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking

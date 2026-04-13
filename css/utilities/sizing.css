@@ -39,10 +39,7 @@ section > .content > .video-wrapper{
     /* display: flex; */
     font-size: 2rem;
 }
-.more-info-links>button {
-    width: 50%;
-    border: 1px solid black;
-}
+
 /* home styles */
 .home-page-container{
     height: 100vh;
