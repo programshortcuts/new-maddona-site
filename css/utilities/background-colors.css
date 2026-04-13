@@ -3,7 +3,9 @@
     --bg-clr: rgb(183, 181, 167);
     --bg-clr: #ddd;
 }
-
+.page-wrapper{
+    background-color: lime !important;
+}
 #mdvipImgLink {
     background-color: tomato;
 }
