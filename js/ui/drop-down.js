@@ -13,34 +13,51 @@ export function initDropDown() {
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking
         el.addEventListener('click', toggleContent)
     })
-
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
+        const target = e.target
+        if(target.classList.contains('section-title')){
 
-        const section = e.target.closest('.section')
-        if(!section) return
-        const downs = section.querySelector('.content.downs')
-        console.log(downs)
-        
-        if(downs){
-            
-            downs.classList.toggle('hide')
-        } else {
-            hideAllDowns()
-        }
-        // if(!downs) return
-
-
-        if(e.type == 'keydown'){
-            const key = e.key.toLowerCase()
-            if(key != 'enter')return
             const section = e.target.closest('.section')
-            const downs = section.querySelector('.downs')
-            console.log('enter')
-            content.classList.toggle('hide')
+            if(!section) return
+            const downs = section.querySelector('.content.downs')
+            console.log(downs)
+            if(downs){
+                downs.classList.toggle('hide')
+            } else {
+                hideAllDowns()
+            }
+            if(e.type == 'keydown'){
+                const key = e.key.toLowerCase()
+                if(key != 'enter')return
+                const section = e.target.closest('.section')
+                const downs = section.querySelector('.downs')
+                console.log('enter')
+                content.classList.toggle('hide')
+            }
+        }
+        if(target.classList.contains('product-title')){
+            const productsContainer = e.target.closest('.products-container')
+            if (!productsContainer) return
+            const downs = productsContainer.querySelector('.products-content.downs')
+            console.log(downs)
+            if (downs) {
+                downs.classList.toggle('hide')
+            } else {
+                hideAllDowns()
+            }
+            // if (e.type == 'keydown') {
+            //     const key = e.key.toLowerCase()
+            //     if (key != 'enter') return
+            //     const section = e.target.closest('.section')
+            //     const downs = section.querySelector('.downs')
+            //     console.log('enter')
+            //     content.classList.toggle('hide')
+            // }
         }
     }
+    
     function hideAllDowns(){
         downs.forEach(el => {
             el.classList.add('hide')
