@@ -52,7 +52,6 @@ export function initImageHandling(){
     }
     function toggleColor(el){
         greyOutSectionImgs()
-        console.log(el)
         el.classList.toggle('colored')
     }
 }
