@@ -9,8 +9,8 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-"pages/medical-spa-services/medical-spa-services.html";
-// "pages/products/products.html";
+// "pages/medical-spa-services/medical-spa-services.html";
+"pages/products/products.html";
     // "pages/home/home.html";
     // "pages/contact/contact.html";
 const pageCache = new Map()
