@@ -13,6 +13,7 @@ export function initDropDown() {
         e.stopPropagation()
 
         const section = e.target.closest('.section')
+        if(!section) return
         const content = section.querySelector('.content')
         content.classList.toggle('hide')
 
@@ -25,7 +26,14 @@ export function initDropDown() {
             console.log('enter')
             content.classList.toggle('hide')
         }
-        
-
+    }
+    function hideEls(els){
+        els.forEach(el =>{
+            console.log(el)
+            if(!el.classList.contains('hide')){
+                el.classList.add('hide')
+                
+            }
+        })
     }
 }

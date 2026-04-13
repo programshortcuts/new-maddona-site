@@ -1,8 +1,9 @@
 /* carousel.css */
 .reviews-carousel {
-    float: right;
-    margin: 40px auto;
-    max-width: 300px;
+    /* float: right; */
+    margin: 0 25%;
+    /* margin: 40px auto; */
+    max-width: 250px;
     text-align: center;
 }
 .reviews-carousel::after{
@@ -14,7 +15,7 @@
 
 .reviews-carousel h2 {
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     color: #333;
 }
 
@@ -46,7 +47,7 @@
 .stars {
     color: #f5c518;
     /* gold color for stars */
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 /* Swiper navigation buttons */
 .swiper-button-next,
