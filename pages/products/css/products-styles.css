@@ -1,1 +1,30 @@
-
+.products-content img {
+    max-width: 25vh;
+    max-height: 25vh;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+}
+.products-header {
+    display: flex;
+    gap: 20%;
+}
+.products-header > h2 > a {
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+}
+.products-header > h2 > a img{
+    height: 100px;
+    height: 100px;
+}
+.products-content-header ,
+.products-content-header > .img-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+.products-content-header > .img-wrapper > img{
+    width:  800px !important;
+    height: 800px !important;
+}

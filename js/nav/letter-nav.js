@@ -37,7 +37,7 @@ export function initLetterNav({
         if (e.target.matches('input, textarea, [contenteditable="true"]')) return;
         // Ignore modifier keys
         const key = e.key.toLowerCase()
-        const selectors = 'ul > li > a, .page-title, img, iframe, .section-title,#mdvipImgLink,#navBarBtn,#madonnaMedSpa-address-header,.more-info-links > button'
+        const selectors = 'ul > li > a, .page-title, img, iframe, .section-title,#mdvipImgLink,#navBarBtn,#madonnaMedSpa-address-header,.more-info-links > button,.letter-alphabet, .title-product'
         let target
         if (e.metaKey) return
         const allEls = [...document.querySelectorAll(selectors)].filter(el => {

@@ -27,17 +27,14 @@ export function initImageHandling(){
         if(e.type == 'click'){
             e.stopPropagation()
             toggleColor(section)
-            console.log(section)
             return
         }
         if(e.type == 'mouseover') {
             greyOutSectionImgs()
             // toggleColor(section)
-            console.log('over')
             return
         }
         if(e.type == 'mousein') {
-            console.log('mouse')
             greyOutSectionImgs()
             // toggleColor(section)
             return
