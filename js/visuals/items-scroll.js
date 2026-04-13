@@ -1,3 +1,4 @@
+// items-scroll.js
 let cleanupItemsScroll = null;
 export function initItemsScroll() {
     const productsContainers = document.querySelectorAll('.products-container');

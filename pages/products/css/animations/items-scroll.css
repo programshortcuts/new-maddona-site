@@ -1,5 +1,7 @@
 /* animations/items-scroll.css */
 .item:focus{
+    outline: none;
+    scroll-margin: 0px;
     padding: 2%;
     border: 1px solid blue;
 }
@@ -15,7 +17,7 @@
     /* 🔥 REQUIRED for real scrolling */
     -webkit-overflow-scrolling: touch;
     /* 🔥 iOS momentum */
-    
+    scroll-padding-inline: 0px;
     
 }
 .items-container {

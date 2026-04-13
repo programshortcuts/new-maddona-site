@@ -1,7 +1,8 @@
 // drop-down.js
+let lastClickedDrop 
 export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
-    const downs = document.querySelectorAll('.downs')
+    const ALLdowns = document.querySelectorAll('.downs')
     const sectionTitles = document.querySelectorAll('.section-title')
     dropDowns.forEach(el => {
         // SUPER IMPORTANT 
@@ -16,7 +17,6 @@ export function initDropDown() {
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
-
         const productTitle = e.target.closest('.product-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
 
@@ -35,13 +35,21 @@ export function initDropDown() {
         // 🔵 SECTION DROPDOWN
         if (sectionTitleDropDown) {
             const section = sectionTitleDropDown.closest('.section')
+            hideAllDowns()
             if (!section) return
             // if(!section.classList.contains('drop-down')) return
+            const downs = section.querySelector('.downs')
+            if (!downs) return
 
-            const content = section.querySelector('.content')
-            if (!content) return
-
-            content.classList.toggle('hide')
+            if(e.target != lastClickedDrop){
+                hideAllDowns()
+                // downs.foor
+            } else {
+            }
+            // console.log(section)
+            console.log(downs)
+            downs.classList.toggle('hide')
+            lastClickedDrop = e.target
             return
         }
     }

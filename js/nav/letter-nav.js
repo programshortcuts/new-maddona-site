@@ -108,8 +108,9 @@ export function initLetterNav({
             }
         }
 
-        target?.focus();
+        // target?.focus();
         target?.scrollIntoView({ behavior: 'instant', block: 'center', inline: 'center' });
+        target?.focus({ preventScroll: true });
     });
 }
 
