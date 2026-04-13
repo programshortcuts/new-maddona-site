@@ -32,3 +32,7 @@
 .item > .title-item{
     font-size: .9rem;
 }
+.filter-nav {
+    display: flex;
+    justify-content: flex-end;
+}
