@@ -16,50 +16,32 @@ export function initDropDown() {
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
-        const target = e.target
-        if(target.classList.contains('section-title')){
 
-            const section = e.target.closest('.section')
-            if(!section) return
-            const downs = section.querySelector('.content.downs')
-            console.log(downs)
-            if(downs){
-                downs.classList.toggle('hide')
-            } else {
-                hideAllDowns()
-            }
-            if(e.type == 'keydown'){
-                const key = e.key.toLowerCase()
-                if(key != 'enter')return
-                const section = e.target.closest('.section')
-                const downs = section.querySelector('.downs')
-                console.log('enter')
-                content.classList.toggle('hide')
-            }
-        }
-        if(target.classList.contains('product-title')){
-            const productsContainer = e.target.closest('.products-container')
+        const productTitle = e.target.closest('.product-title')
+        const sectionTitle = e.target.closest('.section-title')
+
+        // 🟣 PRODUCT DROPDOWN
+        if (productTitle) {
+            const productsContainer = productTitle.closest('.products-container')
             if (!productsContainer) return
+
             const downs = productsContainer.querySelector('.products-content.downs')
-            
-            if (downs) {
-                downs.classList.toggle('hide')
-                return
-            } else {
-                // hideAllDowns()
-            }
-            if (e.type == 'click') {    
-                downs.classList.toggle('hide')
-                return
-            }
-            // if (e.type == 'keydown') {
-            //     const key = e.key.toLowerCase()
-            //     if (key != 'enter') return
-            //     const section = e.target.closest('.section')
-            //     const downs = section.querySelector('.downs')
-            //     console.log('enter')
-            //     content.classList.toggle('hide')
-            // }
+            if (!downs) return
+
+            downs.classList.toggle('hide')
+            return
+        }
+
+        // 🔵 SECTION DROPDOWN
+        if (sectionTitle) {
+            const section = sectionTitle.closest('.section')
+            if (!section) return
+
+            const content = section.querySelector('.content')
+            if (!content) return
+
+            content.classList.toggle('hide')
+            return
         }
     }
     
