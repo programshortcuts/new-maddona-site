@@ -65,22 +65,47 @@ export function initLetterNav({
         if (!matching.length) return;
 
         const activeEl = document.activeElement;
+        const currentIndex = allEls.indexOf(activeEl);
 
-        // If current element is in matching list
-        let currentIndex = matching.indexOf(activeEl);
+        let target = null;
 
-        let target;
+        if (e.shiftKey) {
+            // 🔼 GO BACKWARD
+            for (let i = currentIndex - 1; i >= 0; i--) {
+                if (firstAlpha(allEls[i]) === key) {
+                    target = allEls[i];
+                    break;
+                }
+            }
 
-        if (currentIndex === -1) {
-            // Not currently on a matching element
-            target = e.shiftKey ? matching[matching.length - 1] : matching[0];
+            // wrap to end if nothing found
+            if (!target) {
+                for (let i = allEls.length - 1; i > currentIndex; i--) {
+                    if (firstAlpha(allEls[i]) === key) {
+                        target = allEls[i];
+                        break;
+                    }
+                }
+            }
+
         } else {
-            // Move forward or backward
-            const nextIndex = e.shiftKey
-                ? (currentIndex - 1 + matching.length) % matching.length
-                : (currentIndex + 1) % matching.length;
+            // 🔽 GO FORWARD
+            for (let i = currentIndex + 1; i < allEls.length; i++) {
+                if (firstAlpha(allEls[i]) === key) {
+                    target = allEls[i];
+                    break;
+                }
+            }
 
-            target = matching[nextIndex];
+            // wrap to start if nothing found
+            if (!target) {
+                for (let i = 0; i < currentIndex; i++) {
+                    if (firstAlpha(allEls[i]) === key) {
+                        target = allEls[i];
+                        break;
+                    }
+                }
+            }
         }
 
         target?.focus();
