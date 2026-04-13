@@ -19,8 +19,15 @@
     width: fit-content;
     height: auto;
 }
+.products-container-header > button {
+    display: flex;
+}
 .products-container-header > button > img{
-    height: 50px ;
+    height: 50px;
+}
+.products-container-header > button > img#skinbetterLogo{
+    height: 40px;
+    
 }
 .products-container-header > .img-wrapper > img {
     width: 90%;
