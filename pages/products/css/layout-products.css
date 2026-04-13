@@ -7,7 +7,7 @@
 }
 .products-container-header {
     display: flex;
-    gap: 20%;
+    gap: 5%;
 }
 .products-container-header>h2>a {
     display: inline-block;
@@ -17,7 +17,6 @@
     overflow-x: auto;
     /* allow horizontal scroll */
     overflow-y: hidden;
-    width: 100%;
     /* NOT vmax */
     gap: 1rem;
 
@@ -25,7 +24,7 @@
     scroll-behavior: smooth;
 }
 .item {
-    flex: 0 0 20%;
+    /* flex: 0 0 20%; */
     /* 👈 THIS is what you want */
     display: flex;
     flex-direction: column;

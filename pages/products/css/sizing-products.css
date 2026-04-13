@@ -1,8 +1,8 @@
 /* sizing-products.css */
-.products-content img {
+/* .products-content img {
     max-width: var(--width-prod);
     max-height: var(--width-prod);
-}
+} */
 .products-container-header {
     width: fit-content;
     height: fit-content;
@@ -11,18 +11,25 @@
     width: fit-content;
     height: auto;
 }
-.products-content-header>.img-wrapper {
+
+
+.products-container-header > h2 > a >  img#bioteProdLogo{
+    height: 89px !important;
+}
+.products-container-header > .img-wrapper > img {
+    width: 90% !important;
+    
+}
+
+.items-container {
+    width: 100%;
+}
+.item {
     width: fit-content;
     height: fit-content;
+    height: auto;
 }
-.products-content-header>.img-wrapper>img {
-    /* width: 400px !important; */
-    /* height: 800px !important; */
-}
-.item img {
-    /* width: 1000px !important; */
-    /* height: 100px; */
-}
-.items-container {
-    width: 100vw;
+.item > img.item-img {
+    width: 200px ;
+    height: 200px;
 }

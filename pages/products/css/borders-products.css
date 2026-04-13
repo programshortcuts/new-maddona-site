@@ -1,6 +1,13 @@
 /* spacing-products.css */
-
+.products-container{
+    border-top: 1px solid black;
+}
 .products-content {
-    margin-top: 5%;
-    border: 1px solid black;
+    border-right: none;
+}
+.item {
+    border: 1px solid orange
+}
+.item img.item-img {
+    border: 1px solid blue;
 }

@@ -33,85 +33,58 @@ export function initLetterNav({
     }
     let lastLetterPressed = null;
     document.addEventListener('keydown', (e) => {
-        // Ignore typing fields
         if (e.target.matches('input, textarea, [contenteditable="true"]')) return;
-        // Ignore modifier keys
-        const key = e.key.toLowerCase()
-        const selectors = 'ul > li > a, .page-title, img, iframe, .section-title,#mdvipImgLink,#navBarBtn,#madonnaMedSpa-address-header,.more-info-links > button,.letter-alphabet, .title-product,.title-item'
-        let target
-        if (e.metaKey) return
-        const allEls = [...document.querySelectorAll(selectors)].filter(el => {
-            // if (el.id === 'mainTargetDiv') return true
-            return isActuallyVisible(el)
-        })
-        const firstAlpha = el => {
-            // If element is NOT an anchor, use its ID  
-            // If anchor has ID, go to ID[0]
-            if(el.tagName === "IMG"){
-                const alt = el.getAttribute('alt')
-                if(!alt)return
-                return alt[0]
+        if (e.metaKey) return;
+
+        const key = e.key.toLowerCase();
+        if (!/^[a-z]$/.test(key)) return;
+
+        const selectors = 'ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .letter-alphabet, .product-title, .item';
+
+        const allEls = [...document.querySelectorAll(selectors)].filter(isActuallyVisible);
+
+        const firstAlpha = (el) => {
+            if (el.classList.contains('title-item')) {
+                const item = el.closest('.item');
+                return item?.innerText.trim()[0]?.toLowerCase();
             }
-            if(el.id){
-                return el.id[0].toLowerCase()
-            } else {
-                const s = (el.innerText || '').trim().toLowerCase()
-                for (let i = 0; i < s.length; i++) {
-                    if (/[a-z]/.test(s[i])) {
-                        return s[i]
-                    }
-                }
-                return ''
+
+            if (el.tagName === "IMG") {
+                return el.alt?.[0]?.toLowerCase();
             }
-            // Regular <a> text logic
-        }
-        const matching = allEls.filter(el => {
-            return firstAlpha(el) == key
-        })
-        const activeEl = document.activeElement
-        let iAllEls = allEls.indexOf(activeEl)
-        let iMatching = matching.indexOf(activeEl)
-        let newIndex
-        if (key !== lastLetterPressed) {
-            if (iAllEls === -1) {
-                // nothing focused: pick first/last
-                newIndex = e.shiftKey ? matching.length - 1 : 0
-            } else {
-                const prevEl = allEls[iAllEls - 1]  // the element directly before
-                const nextEl = allEls[iAllEls + 1]  // the element directly after
-                // if the previous element matches the letter, go up one
-                if (prevEl && matching.includes(prevEl)) {
-                    newIndex -= 1
-                } else {
-                    // otherwise go to the next matching element after current focus
-                    let foundNext = false
-                    for (let i = iAllEls + 1; i < allEls.length; i++) {
-                        if (matching.includes(allEls[i])) {
-                            newIndex = matching.indexOf(allEls[i])
-                            foundNext = true
-                            break
-                        }
-                    }
-                    if (!foundNext) {
-                        // fallback to first matching if nothing found below
-                        newIndex = 0
-                    }
-                }
+
+            if (el.id) {
+                return el.id[0].toLowerCase();
             }
+
+            const text = (el.innerText || '').trim().toLowerCase();
+            return text.match(/[a-z]/)?.[0] || '';
+        };
+
+        const matching = allEls.filter(el => firstAlpha(el) === key);
+        if (!matching.length) return;
+
+        const activeEl = document.activeElement;
+
+        // If current element is in matching list
+        let currentIndex = matching.indexOf(activeEl);
+
+        let target;
+
+        if (currentIndex === -1) {
+            // Not currently on a matching element
+            target = e.shiftKey ? matching[matching.length - 1] : matching[0];
         } else {
-            if (iMatching === -1) {
-                // currently focused element is not one of the matching elements
-                newIndex = e.shiftKey ? matching.length - 1 : 0
-            } else {
-                newIndex = e.shiftKey
-                    ? (iMatching - 1 + matching.length) % matching.length
-                    : (iMatching + 1) % matching.length
-            }
+            // Move forward or backward
+            const nextIndex = e.shiftKey
+                ? (currentIndex - 1 + matching.length) % matching.length
+                : (currentIndex + 1) % matching.length;
+
+            target = matching[nextIndex];
         }
-        target = matching[newIndex]
-        target?.focus()
-        target?.scrollIntoView({behavior:'instant', block:'center'})
-        lastLetterPressed = key
+
+        target?.focus();
+        target?.scrollIntoView({ behavior: 'instant', block: 'center', inline: 'center' });
     });
 }
 
