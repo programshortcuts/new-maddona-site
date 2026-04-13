@@ -12,6 +12,7 @@
     padding: 10px 16px;
 
     cursor: grab;
+    scroll-snap-type: x proximity;
 }
 
 .items-container:active {
@@ -19,6 +20,7 @@
 }
 
 .item {
+    scroll-snap-align: start;
     flex: 0 0 auto;
     scroll-snap-align: start;
 
