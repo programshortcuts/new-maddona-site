@@ -19,11 +19,18 @@
     .mobile-header-nav {
         position: fixed;
         z-index: 2;
-        top: 10%;
-        background-color: rgba(0,0,0,0) !important;
+        top: 12%;
+        border: none;
+        /* background-color: rgba(0,0,0,0) !important; */
         /* background-color: blue !important; */
     }
     .med-spa-serv-container{
-        margin-top: 5%;
+        border: none !important;
+    }
+    .mobile-header-nav {
+        border: none !important;
+    }
+    .mobile-header-nav ul li {
+        border: none !important;
     }
 }
