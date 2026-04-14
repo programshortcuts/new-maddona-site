@@ -15,11 +15,18 @@
 @media screen and (min-width:500px) {
     .page-header {
         border-bottom: none !important;
-        z-index: 10;
+        z-index: 3;
+        border: 2px solid magenta !important;
+        position: sticky;
+        top:0;
+        
     }
     .mobile-header-nav {
         position: sticky;
+        z-index: 4;
         top: 0%;
+        background-color: blue;
+        background-color: rgba(0,0,0,0);
         /* z-index: 0; */
         /* margin-top: 5%; */
         /* border: none; */

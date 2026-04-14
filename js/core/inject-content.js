@@ -20,6 +20,7 @@ export function initInjectContentListeners(){
     injectPage(DEFAULT_PAGE)
     mobileHeaderNav.addEventListener('click', e => {
         const link = e.target.closest('a')
+        console.log('here')
         if(!link)return
         const href = e.target.getAttribute("href");
         if (!href || href === "#") return;        
