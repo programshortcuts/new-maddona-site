@@ -23,12 +23,12 @@
     padding-top: 10%;
     padding-left: 10%;
 }
-
-
+#navBarBtn {
+    margin-left: 5%;
+}
 /* contact css */
 .address-num-container {
     padding: 8%;
 }
-
 
 

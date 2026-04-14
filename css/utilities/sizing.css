@@ -21,7 +21,6 @@
 .page-wrapper{
     height: 100vh;
 }
-
 #mdvipImgLink {
     height: 10vh;
     width: 25vh;
@@ -29,17 +28,13 @@
 #botoxAndFillers{
     min-height: 12vh;
 }
-
 #navBarBtn{
     font-size: 2rem;
-    margin-left: 5%;
 }
 .fa-facebook {
     font-size: 3rem;
     color: #1877f2;
 }
-
-
 /* home styles */
 .home-page-container{
     height: 100vh;

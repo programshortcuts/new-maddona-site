@@ -1,5 +1,5 @@
 .med-spa-serv-container>.section>h2>a.section-title {
-    padding-left: 4%;
+    /* padding-left: 4%; */
 }
 .section {
     padding-top: 1.25rem;
@@ -24,7 +24,7 @@
     padding-top: 3%;
     padding-bottom: 1%;
     line-height: 1.8;
-    margin-left: 4%;
+    /* margin-left: 4%; */
     margin-right: 2%;
 }
 
