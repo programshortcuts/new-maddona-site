@@ -39,6 +39,7 @@
 .mobile-header-nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
     flex-grow: 1;
 }
 

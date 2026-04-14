@@ -3,9 +3,12 @@
     position: relative;
     z-index: 1;
 }
-
+.page-wrapper{
+    position: relative;
+}
 .home-page-header {
     z-index: 2;
+    /* position: absolute  ; */
     /* position: absolute; */
 }
 

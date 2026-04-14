@@ -15,12 +15,16 @@
 @media screen and (min-width:500px) {
     .page-header {
         border-bottom: none !important;
+        z-index: 10;
+        position: relative;
     }
     .mobile-header-nav {
-        position: fixed;
-        z-index: 2;
-        top: 12%;
-        border: none;
+        position: sticky;
+        
+        top: 0%;
+        /* z-index: 0; */
+        /* margin-top: 5%; */
+        /* border: none; */
         /* background-color: rgba(0,0,0,0) !important; */
         /* background-color: blue !important; */
     }
@@ -32,5 +36,9 @@
     }
     .mobile-header-nav ul li {
         border: none !important;
+        
+    }
+    .mobile-header-nav ul li a{
+        padding-top: 5%;
     }
 }

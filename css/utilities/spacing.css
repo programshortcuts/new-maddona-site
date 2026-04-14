@@ -1,7 +1,7 @@
 /* spacing.css */
 .page-header > .page-title-container{
     padding-top: 2%;
-    padding-left: 4%;
+    /* padding-left: 4%; */
 }
 .page-header-logos{
     padding-right: 1%;
@@ -19,7 +19,7 @@
 }
 
 .mobile-header-nav>ul>li>a {
-    padding-top: 10%;
+    /* padding-top: 10%; */
     padding-left: 10%;
 }
 #navBarBtn {
