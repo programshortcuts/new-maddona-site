@@ -17,7 +17,7 @@ export function maybeInitAnimations() {
 }
 
 const pageWrapper = document.querySelector('.page-wrapper')
-addEventListener('DOMContentLoaded', initMain())
+addEventListener('DOMContentLoaded', initMain)
 function initMain(){
     initInjectContentListeners()
     initLetterNav({

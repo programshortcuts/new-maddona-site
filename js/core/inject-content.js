@@ -71,6 +71,7 @@ export async function injectPage(href){
     // ✅ Sanitize before injecting
     mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.innerHTML, {
         ALLOWED_TAGS: [
+            'action', 'method', 'type', 'name', 'required', 'for', 'value',
             'form', 'input', 'textarea', 'label',
             'div', 'p', 'span', 'ul', 'ol', 'li',
             'pre', 'code',
