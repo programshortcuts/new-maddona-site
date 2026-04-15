@@ -27,7 +27,7 @@
     padding: 8%;
 }
 .mobile-header-nav>ul>li>a {
-    /* padding-top: 10%; */
-    padding: 2% 0;
+    padding-top: 10%;
+    /* padding: 2% 0; */
     padding-left: 10%;
 }
