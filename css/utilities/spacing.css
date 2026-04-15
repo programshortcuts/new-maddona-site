@@ -18,10 +18,7 @@
     margin-top: 5%;
 }
 
-.mobile-header-nav>ul>li>a {
-    /* padding-top: 10%; */
-    padding-left: 10%;
-}
+
 #navBarBtn {
     margin-left: 5%;
 }
@@ -29,5 +26,7 @@
 .address-num-container {
     padding: 8%;
 }
-
-
+.mobile-header-nav>ul>li>a {
+    /* padding-top: 10%; */
+    padding-left: 10%;
+}

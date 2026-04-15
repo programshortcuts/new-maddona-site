@@ -10,6 +10,7 @@
 .mobile-header-nav ul li {
     border-left: 1px solid black;
     border-right: 1px solid black;
+    /* border: 1px solid black; */
 }
 .mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
     border-top: 1px solid black;
