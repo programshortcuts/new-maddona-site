@@ -1,8 +1,11 @@
 /* text.css */
 .page-header .page-title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     letter-spacing: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.page-container-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .page-header .tel-num{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
