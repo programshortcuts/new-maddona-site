@@ -1,4 +1,43 @@
 /* responsive.css */
+@media screen and (min-width:533px) {
+    #contactMenuNavLink{
+        background-color: rgba(0,0,0,0) !important;
+        fill-opacity: 1 !important;
+    }
+    .mobile-header-nav>ul {
+        justify-content: flex-end !important;
+    }
+    
+    .mobile-header-nav a
+    {
+        width: 80% !important;
+    }
+    .mobile-header-nav>ul>li {
+        /* justify-content: flex-end; */
+        align-items: flex-end;
+    }
+    .mobile-header-nav>ul>li>a {
+    }
+        .social-media-container>.social-media-link-container{
+            /* position: relative; */
+        }
+        .social-media-container>.social-media-link-container a {
+            /* display: inline-block; */
+            /* width: 100% !important; */
+            /* min-height: 20px; */
+            /* position: relative; */
+            position: absolute;
+            right: 100%;
+        }
+    
+        .social-media-container>.social-media-link-container a>svg {
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            left: 0;
+    
+        }
+}
 @media screen and (max-width:532px) {
     .page-header {
         font-size: 50%;
@@ -30,5 +69,8 @@
         border-inline-end-width: 2px black;
         border-radius: 2px;
         width: 100%;
+    }
+    #medicalSpaServicesNavLink{
+        padding-left: 10%;
     }
 }
