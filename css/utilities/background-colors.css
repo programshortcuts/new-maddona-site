@@ -3,15 +3,15 @@
     /* --bg-clr: rgb(183, 181, 167); */
     --bg-clr: #ddd;
 }
-
-#mdvipImgLink {
-    background-color: tomato;
-}
 body,
 .page-wrapper,
 .page-header
 {
     background-color: var(--bg-clr);
+    background-color: limegreen;
+}
+#mdvipImgLink {
+    background-color: tomato;
 }
 .animation-container            { background-color: rgba(0,0,0,0);}
 .animation-container #canvas    { background-color: rgba(0,0,0,0);}

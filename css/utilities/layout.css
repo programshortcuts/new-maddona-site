@@ -26,8 +26,6 @@
     display: flex;
     flex-direction: column;
 }
-
-
 .mobile-header-nav {
     display: inline;
 }
