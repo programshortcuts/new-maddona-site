@@ -10,6 +10,7 @@
 
 .med-spa-serv-container>.section .section-title {
     background-color: inherit;
+    background-color: blue !important;
     border: none;
     letter-spacing: 20%;
     font-size: 1.19rem;

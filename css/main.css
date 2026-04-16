@@ -24,10 +24,12 @@
 @import url('../pages/products/css/products-styles.css');
 @import url('../pages/home/css/spacing-home.css');
 /* med-spa-serv-styles */
+/* @import url('../pages/medical-spa-services/css/bkgrnd-colors-med-spa-serv.css'); */
+
 @import url('../pages/medical-spa-services/css/layout-med-spa-serv.css');
-/* @import url('../pages/medical-sbpa-services/css/spacing-med-spa-serv.css'); */
 @import url('../pages/medical-spa-services/css/sizing-med-spa-serv.css');
-@import url('../pages/medical-spa-services/css/text-med-spa-serv.css');
+@import url('../pages/medical-spa-services/css/spacing-med-spa-serv.css');
+/* @import url('../pages/medical-spa-services/css/text-med-spa-serv.css');s */
 /* products-styles */
 @import url('../pages/products/css/animations/items-scroll.css');
 @import url('../pages/products/css/borders-products.css');

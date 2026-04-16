@@ -1,18 +1,8 @@
 /* layout-med-spa-serv.css */
-section>.content>.img-wrapper {
-    float: right;
-}
 
-section>.content>iframe {
-    float: left;
+.med-spa-serv-container > .page-container{
+    
 }
-
-section::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 #botoxAndFillers>.img-wrapper {
     float: left !important;
 }
@@ -33,6 +23,24 @@ section::after {
     float: left;
 }
 
+
+
+.more-info-links>button {
+    flex-basis: 20%;
+}
+
+.title-text {
+    white-space: nowrap;
+}
+
+.section > button.section-title > .title-text{
+    /* display:inline-flex; */
+    /* flex-wrap: nowrap; */
+    /* border: 10px solid magenta !important; */
+}section>.content>.img-wrapper {
+    float: right;
+}
+
 .section.colored .more-info-links {
     display: flex;
     gap: 1%;
@@ -43,17 +51,15 @@ section::after {
     display: none;
 }
 
-.more-info-links>button {
-    flex-basis: 20%;
-}
-.section > button.section-title {
+.section>button.section-title {
     display: flex;
 }
-.title-text {
-    white-space: nowrap;
+section>.content>iframe {
+    float: left;
 }
-.section > button.section-title > .title-text{
-    /* display:inline-flex; */
-    /* flex-wrap: nowrap; */
-    /* border: 10px solid magenta !important; */
+
+section::after {
+    content: "";
+    display: block;
+    clear: both;
 }

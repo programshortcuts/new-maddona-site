@@ -1,10 +1,9 @@
 /* sizing-med-spa-serv.css */
+
 section>.content>.video-wrapper {
     width: fit-content;
     height: fit-content;
 }
-
-
 .section {
     max-height: 100vh;
     overflow: hidden;
