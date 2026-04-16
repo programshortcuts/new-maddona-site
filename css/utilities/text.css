@@ -19,15 +19,7 @@ a.tel-num:visited{
 .mobile-header-nav {
     font-size: 1.4rem;
 }
-.mobile-header-nav ul{
-   list-style: none;
-   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.mobile-header-nav li a{
-    text-decoration: none;
-    font-size: .9rem;
-}
+
  article > p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,4 +49,15 @@ a.tel-num:visited{
 .home-page-header>.address-num-container {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
+}
+.mobile-header-nav ul {
+    list-style: none;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+.mobile-header-nav li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: .9rem;
 }

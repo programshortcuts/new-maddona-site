@@ -5,7 +5,8 @@
 }
 .page-header{
     position: sticky;
-    top: 0;
+    top: -2%;
+    z-index: 10
 }
 .mobile-header-nav {
     position: sticky;

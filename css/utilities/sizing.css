@@ -47,7 +47,7 @@
     height: fit-content;
 }
 .mobile-header-nav ul li a {
-    width: 60%;
+    /* width: 60%; */
     height: 100%;
     
 }

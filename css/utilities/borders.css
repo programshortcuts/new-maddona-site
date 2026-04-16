@@ -33,17 +33,20 @@ section#botoxAndFillers {
 .animation-container {
     /* border: 1px solid blue */
 }
+
+.mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
+    /* border-top: 1px solid black; */
+}
 .mobile-header-nav {
     /* border-bottom: none; */
     border-radius: 8px;
 }
+
 .mobile-header-nav ul {
     /* border-bottom: 1px solid black; */
 }
+
 .mobile-header-nav ul li {
     /* border-top: 1px solid black; */
-}
-
-.mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
-    /* border-top: 1px solid black; */
+    border-radius: 4px;
 }
