@@ -1,12 +1,9 @@
 /* spacing-products.css */
-.products-container{
-}
+
 .products-content {
     border-right: none;
 }
 .item {
     box-shadow: 0 0 1px 1px grey;
     border-radius: 8px;
-}
-.item img.item-img {
 }

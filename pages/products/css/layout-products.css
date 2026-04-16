@@ -5,7 +5,6 @@
 .alpha-list>li {
     flex-basis: 4%;
 }
-
 .items-container {
     display: flex;
     overflow-x: auto;
@@ -16,6 +15,10 @@
 
     /* optional smooth scroll */
     scroll-behavior: smooth;
+}
+.items-container.sort {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 .item {
     /* flex: 0 0 20%; */
@@ -34,7 +37,10 @@
 }
 .filter-nav{
     display: flex;
-    justify-content: flex-end;
-    justify-content: flex-end;
-    background-color: blue;
+    align-items: flex-end;
+    background-color: blue !important;
+}
+.products-content >.filter-nav> button{
+    background-color: blue !important;
+
 }
