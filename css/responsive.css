@@ -6,11 +6,9 @@
 
     
     .mobile-header-nav {
-        position: absolute;
+        position: fixed !important;
         bottom: 0%;
-        z-index: 4;
-        background-color: rgba(0, 0, 0, 0) !important;
-        border-top: none !important;
+        top: 100%;
     }
 
 

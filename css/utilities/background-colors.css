@@ -8,38 +8,22 @@
     background-color: tomato;
 }
 body,
-.page-wrapper{
+.page-wrapper,
+.page-header
+{
     background-color: var(--bg-clr);
-    /* background-image: url('../../imgs/AS-Botox2000.jpg.webp'); */
 }
-.main-landing-page{
-    /* background-color: lime; */
-}
-
 .animation-container            { background-color: rgba(0,0,0,0);}
 .animation-container #canvas    { background-color: rgba(0,0,0,0);}
 
-.page-header {
-    
-    background-color: rgba(0, 0, 0, 0) !important;
-    /* filter: opacity(1); */
-    /* background-color: blue !important; */
-    
-}
-.mobile-header-nav{    
-    background-color: rgba(0, 0, 0, 0) !important;
-    /* background-color: blue !important; */
+.mobile-header-nav,
+.mobile-header-nav > ul,
+.mobile-header-nav>ul>li#contactMenuLi
+{
+    background-color: rgba(0, 0, 0, 0);
     filter: opacity(1);
 }
-.mobile-header-nav > ul{
-    background-color: rgba(0, 0, 0, 0) !important;
-    /* background-color: blue !important; */
-    filter: opacity(1);
-}
-
-.mobile-header-nav > ul > li {
-    filter: opacity(1);
-}
+/* .mobile-header-nav>ul>li, */
 .mobile-header-nav > ul > li > a{
     /* background-color: rgba(0,0,0,0) !important; */
     /* background-color: blue !important; */
