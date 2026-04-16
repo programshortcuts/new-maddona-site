@@ -38,7 +38,7 @@ section#botoxAndFillers {
     border-radius: 8px;
 }
 .mobile-header-nav ul {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 .mobile-header-nav ul li {
     /* border-top: 1px solid black; */

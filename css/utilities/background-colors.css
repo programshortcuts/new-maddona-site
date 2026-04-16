@@ -37,7 +37,10 @@ body,
     filter: opacity(1);
 }
 
-.mobile-header-nav > ul > li{
+.mobile-header-nav > ul > li {
+    filter: opacity(1);
+}
+.mobile-header-nav > ul > li > a{
     /* background-color: rgba(0,0,0,0) !important; */
     /* background-color: blue !important; */
     /* filter: opacity(1); */

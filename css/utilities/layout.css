@@ -22,7 +22,8 @@
 }
 .mobile-header-nav>ul {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: center;
 }
 .mobile-header-nav>ul>li {
     flex-basis: 25%;
