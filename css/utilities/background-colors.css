@@ -9,7 +9,7 @@
 }
 body,
 .page-wrapper{
-    background-color: var(--bg-clr);
+    /* background-color: var(--bg-clr); */
 }
  section,
  article {
