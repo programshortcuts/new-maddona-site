@@ -6,5 +6,11 @@
 .page-wrapper{
     /* position: relative; */
 }
-
-
+.page-header{
+    /* display: fixed; */
+    top: 0;
+}
+.mobile-header-nav {
+    position: sticky;
+    top: 0;
+}
