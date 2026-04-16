@@ -29,3 +29,7 @@
 
     text-decoration: none;
  }
+ .content-box > h3{
+    color: var(--font-p-clr);
+    text-shadow: 1px 1px 1px whitesmoke;
+ }
