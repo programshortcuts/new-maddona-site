@@ -13,8 +13,11 @@
 .more-info-links button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-article>p {
+.med-spa-serv-container .content>p {
      font-family: Arial, Helvetica, sans-serif;
+     /* color: whitesmoke !important; */
+
+     /* text-shadow: 1px 1px 1px black; */
  }
  section button.section-title{
     font-size: 1.3rem !important;
@@ -22,6 +25,7 @@ article>p {
     background-color: inherit;
     border: none;
     letter-spacing: 20%;
-        
+    font-size: 1rem;
+
     text-decoration: none;
  }
