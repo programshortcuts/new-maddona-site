@@ -35,7 +35,7 @@
     }
     #contactMenuNavLink > .social-media-container>.social-media-link-container a{
         display: inline-flex;
-        flex-direction: column;
+        flex-direction: column;                        
         width: 50% !important;
     }
     #contactMenuNavLink > .social-media-container{
@@ -48,7 +48,7 @@
 @media screen and (max-width:532px) {
     #contactMenuNavLink>.social-media-container {
             padding-left: 20% !important;
-        }
+    }
     .page-header {
         font-size: 50%;
     }
