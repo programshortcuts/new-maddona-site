@@ -122,4 +122,9 @@
     #medicalSpaServicesNavLink {
         padding-left: 10%;
     }
+        .home-page-container>article.mission-state>p {
+            padding: 1%;
+            padding-top: 5%;
+            margin-top:2%;
+        }
 }
