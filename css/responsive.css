@@ -80,6 +80,12 @@
 }
 
 @media screen and (max-width:500px) {
+    .mobile-header-nav,
+        .mobile-header-nav>ul,
+        .mobile-header-nav>ul>li,
+        .mobile-header-nav>ul>li#contactMenuLi{
+            background-color:  var(--bg-clr) !important;
+        }
 .page-header {
     background-color: var(--bg-clr) !important;
     z-index: 2;
