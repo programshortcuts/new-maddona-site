@@ -6,7 +6,7 @@
 @import url('visuals/carousel.css');
 @import url('imgs.css');
 @import url('videos.css');
-@import url('responsive.css');
+
 /* utilities */
 @import url('utilities/borders.css');
 @import url('utilities/display.css');
@@ -43,13 +43,13 @@
 /* contact-styles */
 @import url('../pages/contact/css/contact-styles.css');
 @import url('../pages/contact/css/contact-form.css');
+
+@import url('responsive.css');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 .error-message {
     color: red;
 }

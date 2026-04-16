@@ -1,7 +1,7 @@
 /* position.css */
 
 .page-wrapper{
-    position: relative;
+    /* position: relative; */
 }
 .page-header{
     position: sticky;
@@ -9,6 +9,6 @@
 }
 .mobile-header-nav {
     position: sticky;
+    top: 0;
     z-index: 100;
-    top: 5%;
 }
