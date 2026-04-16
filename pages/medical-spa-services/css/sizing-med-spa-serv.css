@@ -9,16 +9,13 @@ section>.content>.video-wrapper {
     max-height: 120px;
 }
 
-.section-title img {
-    width: 80px;
-    height: auto;
-}
+
 .section {
     max-height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
 }
-.section button.section-title{
-    background-color: inherit;
-    border: none;
+.section-title img {
+    width: 180px;
+    height: auto;
 }
