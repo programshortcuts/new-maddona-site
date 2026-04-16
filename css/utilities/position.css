@@ -1,16 +1,13 @@
 /* position.css */
-.home-page-container {
-    /* position: relative; */
-    /* z-index: 1; */
-}
+
 .page-wrapper{
     position: relative;
 }
 .page-header{
-    display: absolute;
-    top: 0;
+    display: relative;
 }
 .mobile-header-nav {
     position: sticky;
+    z-index: 100;
     top: 0;
 }

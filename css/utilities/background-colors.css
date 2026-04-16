@@ -1,6 +1,6 @@
 /* backgrounds.css */
 :root {
-    --bg-clr: rgb(183, 181, 167);
+    /* --bg-clr: rgb(183, 181, 167); */
     --bg-clr: #ddd;
 }
 
@@ -9,8 +9,11 @@
 }
 body,
 .page-wrapper{
-    /* background-color: var(--bg-clr); */
+    background-color: var(--bg-clr);
     /* background-image: url('../../imgs/AS-Botox2000.jpg.webp'); */
+}
+.main-landing-page{
+    /* background-color: lime; */
 }
 
 .animation-container            { background-color: rgba(0,0,0,0);}
@@ -18,23 +21,26 @@ body,
 
 .page-header {
     
-    background-color: blue;
     background-color: rgba(0, 0, 0, 0) !important;
+    /* filter: opacity(1); */
     /* background-color: blue !important; */
+    
 }
 .mobile-header-nav{    
     background-color: rgba(0, 0, 0, 0) !important;
     /* background-color: blue !important; */
+    filter: opacity(1);
 }
 .mobile-header-nav > ul{
     background-color: rgba(0, 0, 0, 0) !important;
     /* background-color: blue !important; */
+    filter: opacity(1);
 }
-.mobile-header-nav > ul{
-    background-color: rgba(0,0,0,0) !important;
-    
-}
+
 .mobile-header-nav > ul > li{
-    background-color: rgba(0,0,0,0) !important;
+    /* background-color: rgba(0,0,0,0) !important; */
+    /* background-color: blue !important; */
+    /* filter: opacity(1); */
+    background-color: var(--bg-clr);
     
 }

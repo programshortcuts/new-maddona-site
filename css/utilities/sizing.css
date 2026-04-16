@@ -1,10 +1,12 @@
 /* sizing.css */
+
 .page-header{
     width: 100vw;
     height: 10vh;
 }
 .main-landing-page{
-    height: 90vmax;
+    min-height: 200vh;
+    
 }
 .page-header-logos {
     height: fit-content;   
@@ -14,9 +16,7 @@
     height: 100px;
 }
 
-.page-wrapper {
-    height: 100vh;
-}
+
 #mdvipImgLink {
     height: 10vh;
     width: 25vh;
