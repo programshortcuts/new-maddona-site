@@ -1,9 +1,6 @@
 .contact-page-container{
     position: relative;
 }
-.home-page-container > .home-page-header{
-    float: left;
-}
 .home-page-container .animation-container {
     /* position: flo; */
     float: right !important;
@@ -14,3 +11,7 @@
     /* width: 50%; */
     /* z-index: 101; */
 }
+
+.home-page-container  article>p {
+     font-family: Arial, Helvetica, sans-serif;
+ }

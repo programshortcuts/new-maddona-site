@@ -13,13 +13,4 @@
     top: 8%;
     z-index: 100;
 }
-.animation-container{
-    position: absolute;
-    right: 50%;
-    border: 1px solid black;
-    width: 50%;
-    z-index: 2;
-}
-.social-media-email-container{
 
-}
