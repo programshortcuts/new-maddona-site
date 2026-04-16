@@ -18,18 +18,10 @@
     max-height: 100px;
     height: 100px;
 }
-
-
-#mdvipImgLink {
-    height: 10vh;
-    width: 25vh;
-}
 #botoxAndFillers {
     min-height: 12vh;
 }
-#navBarBtn {
-    font-size: 2rem;
-}
+
 .fa-facebook {
 
     font-size: 3rem;

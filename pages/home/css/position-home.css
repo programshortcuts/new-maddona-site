@@ -1,13 +1,12 @@
-.misson-state >.home-page-container{
+/* position-home.css */
+.mission-state {
     position: relative;
+}
+.mission-state >.home-page-header{
+    /* position: relative; */
     float: left;
 }
-.misson-state >.home-page-container::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-.home-page-container .animation-container {
+.mission-state>.animation-container {
     float: right;
     /* position: absolute; */
     /* right: 50%; */
@@ -16,3 +15,11 @@
     /* width: 50%; */
     /* z-index: 101; */
 }
+.home-page-container .animation-container::after,
+.mission-state >.home-page-header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+

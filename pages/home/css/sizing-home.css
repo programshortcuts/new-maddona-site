@@ -1,5 +1,9 @@
-/* sizing-home.csso */
-.home-page-header{
+/* sizing-home.css*/
+.mission-state > .home-page-header{
     width: 40%;
-    border: 1px solid blue
+    /* border: 1px solid blue; */
+}
+.mission-state>.animation-container {
+
+    width: 50%;
 }
