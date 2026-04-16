@@ -1,4 +1,7 @@
 /* colors.css */
+.fa-facebook {
+    color: #1877f2;
+}
 :root {
     --font-p-clr: rgb(80, 81, 75);
 }

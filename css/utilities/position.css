@@ -4,10 +4,10 @@
     /* z-index: 1; */
 }
 .page-wrapper{
-    /* position: relative; */
+    position: relative;
 }
 .page-header{
-    /* display: fixed; */
+    display: absolute;
     top: 0;
 }
 .mobile-header-nav {

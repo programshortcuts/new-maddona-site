@@ -17,5 +17,7 @@ section>.content>.video-wrapper {
 }
 .section-title img {
     width: 180px;
-    height: auto;
+    max-height: 120px;
+    height: 50px;
+    /* height: auto; */
 }

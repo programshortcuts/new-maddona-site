@@ -1,19 +1,18 @@
 /* responsive.css */
-@media screen and (min-width:933px) {
-    
-}
+@media screen and (min-width:933px) {}
+
 @media screen and (max-width:500px) {
-    
-    
+
+
     
     .mobile-header-nav {
-        position: fixed; 
+        position: absolute;
         bottom: 0%;
         z-index: 4;
         background-color: rgba(0, 0, 0, 0) !important;
         border-top: none !important;
     }
-    
-    
-    
+
+
+
 }

@@ -10,22 +10,29 @@
     justify-content: space-between;
     /* justify-content: space-around; */
 }
-.mobile-header-nav {
-    display: inline;
-    
-    
-}
-.mobile-header-nav > ul {
-    display: flex;
-}
-.mobile-header-nav > ul > li{
-    flex-basis: 25%;
-}
-
 .main-landing-page {
     overflow: hidden;
     overflow-y: scroll;
 }
 .hide {
     display: none;
+}
+.mobile-header-nav {
+    display: inline;
+}
+
+.mobile-header-nav>ul {
+    display: flex;
+}
+
+.mobile-header-nav>ul>li {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mobile-header-nav>ul>li > a{
+    display: inline-block;
+    
 }
