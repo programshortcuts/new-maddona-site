@@ -15,7 +15,7 @@
 }
 .animation-container{
     position: absolute;
-    right: 0;
+    right: 50%;
     border: 1px solid black;
     width: 50%;
     z-index: 2;
