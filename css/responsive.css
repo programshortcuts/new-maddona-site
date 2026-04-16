@@ -1,63 +1,72 @@
 /* responsive.css */
 @media screen and (min-width:533px) {
-    
+
     .mobile-header-nav>ul {
         justify-content: flex-end !important;
     }
-    
-    .mobile-header-nav a
-    {
+
+    .mobile-header-nav a {
         width: 80% !important;
     }
+
     .mobile-header-nav>ul>li {
         justify-content: flex-end;
         align-items: flex-end;
     }
-    #contactMenuNavLink > a{
+
+    #contactMenuNavLink>a {
         width: 70% !important;
     }
+
     #contactMenuNavLink {
         width: 100%;
         align-items: flex-start !important;
         background-color: rgba(0, 0, 0, 0) !important;
         fill-opacity: 1 !important;
     }
-    #contactMenuNavLink > .social-media-container{
+
+    #contactMenuNavLink>.social-media-container {
         padding-left: 20% !important;
         display: flex;
         padding-left: 20% !important;
-        /* flex-direction: column; */
-        /* align-items: flex-end; */
-        /* justify-content: flesx-end; */
-        /* align-items:     center; */
+   
         width: 100%;
         justify-content: center;
     }
-    #contactMenuNavLink > .social-media-container>.social-media-link-container a{
+
+    #contactMenuNavLink>.social-media-container>.social-media-link-container a {
         display: inline-flex;
-        flex-direction: column;                        
+        flex-direction: column;
         width: 50% !important;
     }
-    #contactMenuNavLink > .social-media-container{
-        background-color: rgba(0,0,0,0) !important;
-        fill-opacity:1 !important;
+
+    #contactMenuNavLink>.social-media-container {
+        background-color: rgba(0, 0, 0, 0) !important;
+        fill-opacity: 1 !important;
         align-self: flex-end;
         width: 80%;
     }
 }
+
 @media screen and (max-width:532px) {
     #contactMenuNavLink>.social-media-container {
-            padding-left: 20% !important;
+        /* padding-left: 20% !important; */
     }
+    #contactMenuNavLink>.social-media-container {
+        width: 100%;
+    }
+
     .page-header {
         font-size: 50%;
     }
 }
+
 @media screen and (max-width:500px) {
-    .page-header{
+    .page-header {
         background-color: var(--bg-clr) !important;
         z-index: 2;
     }
+
     .mobile-header-nav {
         background-color: var(--bg-clr);
         position: fixed;
@@ -69,18 +78,21 @@
         height: 80px;
         z-index: 10;
     }
-    .mobile-header-nav > ul {
+
+    .mobile-header-nav>ul {
         align-items: flex-start;
         padding-top: 2%;
     }
-    .mobile-header-nav > ul > li > a{
+
+    .mobile-header-nav>ul>li>a {
         border-top: 1px solid black;
         border-right: 1px solid black;
         border-inline-end-width: 2px black;
         border-radius: 2px;
         width: 100%;
     }
-    #medicalSpaServicesNavLink{
+
+    #medicalSpaServicesNavLink {
         padding-left: 10%;
     }
 }
