@@ -1,7 +1,7 @@
 /* backgrounds.css */
 :root {
     /* --bg-clr: rgb(183, 181, 167); */
-    --bg-clr: #ddd;
+    --bg-clr: #ede4e4;
 }
 
 #mdvipImgLink {
@@ -11,7 +11,9 @@ body,
 .page-wrapper,
 .page-header
 {
-    background-color: var(--bg-clr);
+    background-color: rgba(0, 0, 0, 0);
+        filter: opacity(1);
+
 }
 .animation-container            { background-color: rgba(0,0,0,0);}
 .animation-container #canvas    { background-color: rgba(0,0,0,0);}
@@ -23,11 +25,13 @@ body,
     background-color: rgba(0, 0, 0, 0);
     filter: opacity(1);
 }
-.mobile-header-nav>ul>li,
+.mobile-header-nav>ul>li{
+}
 .mobile-header-nav > ul > li > a{
     /* background-color: rgba(0,0,0,0) !important; */
     /* background-color: blue !important; */
     /* filter: opacity(1); */
     background-color: var(--bg-clr);
+    /* background-color: inherit; */
     
 }
