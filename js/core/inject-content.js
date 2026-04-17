@@ -2,6 +2,7 @@
 import { isSafePath } from "./security-utils.js";
 // import { maybeInitAnimations } from "../app.js";
 import { initDropDown } from "../ui/drop-down.js";
+import { initFilterSortItems } from "../ui/filter-sort-items.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 import { initProdImgHandle } from "../visuals/handleProductImgs.js";
 import { initItemsScroll } from "../visuals/items-scroll.js";
@@ -94,4 +95,5 @@ export async function injectPage(href){
     initProdImgHandle()
     initItemsScroll()
     initDropDown()   
+    initFilterSortItems()
 }

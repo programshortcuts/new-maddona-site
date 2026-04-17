@@ -1,0 +1,15 @@
+/* filter-sort-items.css */
+.sort{}
+
+.items-container.sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  /* 🔥 REQUIRED for real scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* 🔥 iOS momentum */
+  scroll-padding-inline: 0px;
+
+}
