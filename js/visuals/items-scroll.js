@@ -14,16 +14,37 @@ export function initItemsScroll() {
         const container = el.closest('.items-container');
         if (!container) return;
 
-        const containerWidth = container.clientWidth;
-        const itemWidth = el.offsetWidth;
+        const isVertical = container.classList.contains('sort');
 
-        const targetScroll =
-            el.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
+        if (isVertical) {
+            // ✅ vertical scroll
+            const containerTop = container.scrollTop;
+            const containerHeight = container.clientHeight;
 
-        container.scrollTo({
-            left: targetScroll,
-            behavior: "smooth"
-        });
+            const itemTop = el.offsetTop;
+            const itemHeight = el.offsetHeight;
+
+            const targetScroll =
+                itemTop - (containerHeight / 2) + (itemHeight / 2);
+
+            container.scrollTo({
+                top: targetScroll,
+                behavior: "smooth"
+            });
+
+        } else {
+            // ✅ horizontal scroll (your original)
+            const containerWidth = container.clientWidth;
+            const itemWidth = el.offsetWidth;
+
+            const targetScroll =
+                el.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
+
+            container.scrollTo({
+                left: targetScroll,
+                behavior: "smooth"
+            });
+        }
     };
     // =========================
     // 🔤 ALPHA NAV (SCOPED CORRECTLY)

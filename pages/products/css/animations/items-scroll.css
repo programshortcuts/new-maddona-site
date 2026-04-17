@@ -40,3 +40,25 @@
 .items-container {
     scrollbar-width: none;
 }
+
+.items-container.sort {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 500px;
+    /* adjust */
+    scroll-behavior: smooth;
+
+    /* 🔥 vertical snapping */
+    scroll-snap-type: y proximity;
+}
+
+.items-container.sort .item {
+    scroll-snap-align: start;
+}
+
+.item:focus {
+    outline: none;
+    scroll-margin: 20px;
+    /* 👈 gives breathing room */
+}
