@@ -1,43 +1,4 @@
-/* layout-contact.css */
-.contact-
-.address-num-container {
-    border-right: 1px solid black;
-}
-
-.contact-container {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 4% 1%;
-    border: 1px solid black;
-}
-.contact-container > .contact-item{
-    flex-basis: 50%;
-}
-.social-media-container {
-    display: flex;
-    flex-direction: row;
-    /* SIDE BY SIDE */
-    gap: 20px;
-    /* spacing between icons */
-}
-
-/* each item takes equal space */
-.social-media-item-lg {
-    flex: 1;
-    display: flex;
-}
-
-/* make anchor fill full box */
-.social-media-item-lg a {
-    display: flex;
-    /* control icon box size here */
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-/* SVG fills anchor */
-.social-media-item-lg svg {
-    /* optional cap so it doesn't explode */
-    display: block;
+/* spacing-contact.css */
+.contact-container{
+    margin-top: 25%;
 }

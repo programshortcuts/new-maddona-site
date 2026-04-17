@@ -9,9 +9,9 @@
     flex-direction: row-reverse;
     padding: 4% 1%;
     border: 1px solid black;
+    flex-basis: 20%;
 }
-.contact-container > .contact-item{
-    flex-basis: 50%;
+.form-contact-container {
 }
 .social-media-container {
     display: flex;
