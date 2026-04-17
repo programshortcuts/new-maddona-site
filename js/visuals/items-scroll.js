@@ -1,63 +1,67 @@
 // items-scroll.js
 let cleanupItemsScroll = null;
+
 export function initItemsScroll() {
     const productsContainers = document.querySelectorAll('.products-container');
     if (!productsContainers.length) return;
-    // 🔥 CLEANUP (inject-safe)
+
+    // 🔥 CLEANUP (important for injected pages)
     if (cleanupItemsScroll) cleanupItemsScroll();
-    const isTouchDevice = () =>
-        window.matchMedia("(pointer: coarse)").matches;
+
+    const listeners = [];
+
     // =========================
-    // 🎯 CENTER ITEM (APPLE STYLE)
+    // 🎯 SCROLL LOGIC
     // =========================
     const scrollToItem = (el) => {
-        const container = el.closest('.items-container');
-        if (!container) return;
+    const container = el.closest('.items-container');
+    if (!container) return;
 
-        const isVertical = container.classList.contains('sort');
+    const isVertical = container.classList.contains('sort');
 
-        if (isVertical) {
-            // ✅ vertical scroll
-            const containerTop = container.scrollTo;
-            const containerHeight = container.clientHeight;
+    if (isVertical) {
+        const containerHeight = container.clientHeight;
+        const itemHeight = el.offsetHeight;
 
-            const itemTop = el.offsetTop;
-            const itemHeight = el.offsetHeight;
+        const containerScrollTop = container.scrollTop;
+        const itemTop = el.offsetTop;
 
-            const targetScroll =
-                itemTop - (containerHeight / 2) + (itemHeight / 2);
+        // 🎯 center item vertically in container
+        const targetScroll =
+            itemTop - (containerHeight / 2) + (itemHeight / 2);
 
-            container.scrollTo({
-                top: targetScroll - 100,
-                behavior: "smooth",
-            });
+        container.scrollTo({
+            top: targetScroll,
+            behavior: "smooth"
+        });
 
-        } else {
-            // ✅ horizontal scroll (your original)
-            const containerWidth = container.clientWidth;
-            const itemWidth = el.offsetWidth;
+    } else {
+        const containerWidth = container.clientWidth;
+        const itemWidth = el.offsetWidth;
 
-            const targetScroll =
-                el.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
+        const targetScroll =
+            el.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
 
-            container.scrollTo({
-                left: targetScroll,
-                behavior: "smooth"
-            });
-        }
-    };
+        container.scrollTo({
+            left: targetScroll,
+            behavior: "smooth"
+        });
+    }
+};
+
     // =========================
-    // 🔤 ALPHA NAV (SCOPED CORRECTLY)
+    // 🔤 ALPHA NAV
     // =========================
     const alphaLinks = document.querySelectorAll('.letter-alphabet');
+
     const alphaClickHandler = (e) => {
         e.preventDefault();
 
         const letter = e.currentTarget.textContent.trim().toUpperCase();
-        const productsContainer = e.currentTarget.closest('.products-container');
-        if (!productsContainer) return;
+        const container = e.currentTarget.closest('.products-container');
+        if (!container) return;
 
-        const items = productsContainer.querySelectorAll('.item');
+        const items = container.querySelectorAll('.item');
 
         const match = Array.from(items).find(item => {
             const title = item.querySelector('.title-item');
@@ -66,12 +70,13 @@ export function initItemsScroll() {
 
         if (!match) return;
 
-        scrollToItem(match);
         match.focus();
+        scrollToItem(match);
     };
 
     alphaLinks.forEach(link => {
         link.addEventListener('click', alphaClickHandler);
+        listeners.push(() => link.removeEventListener('click', alphaClickHandler));
     });
 
     // =========================
@@ -79,22 +84,25 @@ export function initItemsScroll() {
     // =========================
     const allItems = document.querySelectorAll('.item');
 
-    const removeAllClickedItems = () => {
+    const removeAllClicked = () => {
         allItems.forEach(el => el.classList.remove('clicked-item'));
     };
 
-    const focusHandler = (e) => {
-        removeAllClickedItems();
+    const handleFocus = (e) => {
+        removeAllClicked();
         scrollToItem(e.currentTarget);
     };
 
-    const itemClick = (e) => {
+    const handleClick = (e) => {
         const item = e.currentTarget;
+
+        item.focus(); // 🔥 unify behavior
         scrollToItem(item);
+
         item.classList.toggle('clicked-item');
     };
 
-    const itemKeydown = (e) => {
+    const handleKeydown = (e) => {
         const key = e.key.toLowerCase();
         const current = e.currentTarget;
 
@@ -105,11 +113,10 @@ export function initItemsScroll() {
         const index = items.indexOf(current);
 
         let nextIndex = null;
-
         const isVertical = container.classList.contains('sort');
 
         // =========================
-        // 🎯 HORIZONTAL MODE
+        // 🎯 HORIZONTAL
         // =========================
         if (!isVertical) {
             if (key === 'arrowright') nextIndex = index + 1;
@@ -117,12 +124,15 @@ export function initItemsScroll() {
         }
 
         // =========================
-        // 🎯 VERTICAL / GRID MODE
+        // 🎯 GRID (VERTICAL)
         // =========================
         if (isVertical) {
-            const containerWidth = container.clientWidth;
-            const itemWidth = current.offsetWidth + 16; // include gap
-            const itemsPerRow = Math.floor(containerWidth / itemWidth) || 1;
+            const styles = getComputedStyle(container);
+            const gap = parseInt(styles.gap) || 0;
+
+            const itemWidth = current.offsetWidth + gap;
+            const itemsPerRow =
+                Math.floor(container.clientWidth / itemWidth) || 1;
 
             if (key === 'arrowright') nextIndex = index + 1;
             if (key === 'arrowleft') nextIndex = index - 1;
@@ -130,18 +140,14 @@ export function initItemsScroll() {
             if (key === 'arrowup') nextIndex = index - itemsPerRow;
         }
 
-        // =========================
-        // 🎯 ENTER KEY
-        // =========================
+        // ENTER
         if (key === 'enter') {
             current.classList.toggle('clicked-item');
             scrollToItem(current);
             return;
         }
 
-        // =========================
-        // 🎯 APPLY NAVIGATION
-        // =========================
+        // APPLY NAV
         if (nextIndex !== null && items[nextIndex]) {
             e.preventDefault();
             items[nextIndex].focus();
@@ -150,85 +156,76 @@ export function initItemsScroll() {
     };
 
     allItems.forEach(item => {
-        item.addEventListener('click', itemClick);
-        item.addEventListener('keydown', itemKeydown);
-        item.addEventListener('focus', focusHandler);
-        item.addEventListener('focusout', removeAllClickedItems);
+        item.addEventListener('click', handleClick);
+        item.addEventListener('focus', handleFocus);
+        item.addEventListener('keydown', handleKeydown);
+        item.addEventListener('focusout', removeAllClicked);
+
+        listeners.push(() => {
+            item.removeEventListener('click', handleClick);
+            item.removeEventListener('focus', handleFocus);
+            item.removeEventListener('keydown', handleKeydown);
+            item.removeEventListener('focusout', removeAllClicked);
+        });
     });
 
     // =========================
-    // 🖱 DESKTOP DRAG ONLY
+    // 🖱 DRAG SCROLL (HORIZONTAL ONLY)
     // =========================
     let isDown = false;
     let startX = 0;
     let scrollLeft = 0;
 
+    const isTouchDevice = () =>
+        window.matchMedia("(pointer: coarse)").matches;
+
     const mouseDown = (e) => {
-        if (isTouchDevice()) return; // 🔥 disable on mobile
+        if (isTouchDevice()) return;
         if (e.target.closest('.item')) return;
 
         const container = e.currentTarget;
 
         isDown = true;
-        container.classList.add('active');
-
         startX = e.pageX - container.offsetLeft;
         scrollLeft = container.scrollLeft;
     };
 
     const mouseMove = (e) => {
-        if (isTouchDevice()) return; // 🔥 disable on mobile
+        if (isTouchDevice()) return;
         if (!isDown) return;
 
         e.preventDefault();
 
         const container = e.currentTarget;
         const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 2.2;
+        const walk = (x - startX) * 2;
 
         container.scrollLeft = scrollLeft - walk;
     };
 
-    const mouseUp = () => { isDown = false; };
-    const mouseLeave = () => { isDown = false; };
-
-    // =========================
-    // 📦 BIND EACH CONTAINER
-    // =========================
-    const containers = [];
+    const stopDrag = () => { isDown = false; };
 
     productsContainers.forEach(product => {
-        const itemsContainer = product.querySelector('.items-container');
-        if (!itemsContainer) return;
+        const container = product.querySelector('.items-container');
+        if (!container) return;
 
-        itemsContainer.addEventListener('mousedown', mouseDown);
-        itemsContainer.addEventListener('mousemove', mouseMove);
-        itemsContainer.addEventListener('mouseup', mouseUp);
-        itemsContainer.addEventListener('mouseleave', mouseLeave);
+        container.addEventListener('mousedown', mouseDown);
+        container.addEventListener('mousemove', mouseMove);
+        container.addEventListener('mouseup', stopDrag);
+        container.addEventListener('mouseleave', stopDrag);
 
-        containers.push(itemsContainer);
+        listeners.push(() => {
+            container.removeEventListener('mousedown', mouseDown);
+            container.removeEventListener('mousemove', mouseMove);
+            container.removeEventListener('mouseup', stopDrag);
+            container.removeEventListener('mouseleave', stopDrag);
+        });
     });
 
     // =========================
-    // 🧹 CLEANUP
+    // 🧹 CLEANUP FUNCTION
     // =========================
     cleanupItemsScroll = () => {
-        alphaLinks.forEach(link => {
-            link.removeEventListener('click', alphaClickHandler);
-        });
-
-        allItems.forEach(item => {
-            item.removeEventListener('click', itemClick);
-            item.removeEventListener('keydown', itemKeydown);
-            item.removeEventListener('focus', focusHandler);
-            item.removeEventListener('focusout', removeAllClickedItems);
-        });
-
-        containers.forEach(container => {
-            container.removeEventListener('mousedown', mouseDown);
-            container.removeEventListener('mousemove', mouseMove);
-            container.removeEventListener('mouseup', mouseUp);
-            container.removeEventListener('mouseleave', mouseLeave);
-        });
+        listeners.forEach(fn => fn());
     };
 }

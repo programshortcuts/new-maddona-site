@@ -34,27 +34,29 @@
 .items-container.sort .item {
     scroll-snap-align: start;
     width: 180px;
+    scroll-margin-top: 20px;
+        /* 🔥 adjust this */
 }
 
-.item:focus {
-    outline: none;
-    padding: 1%;
-    scroll-margin: 50%;
-    scroll-margin-block: 50px;
-    /* 👈 gives breathing room */
-    transition: all .3s;
-    border-radius: 4px;
-    box-shadow: 0 0 1px 1px lightblue;
-    border: 1px solid blue
-}
 .item {
     scroll-snap-align: start;
     flex: 0 0 auto;
     scroll-snap-align: start;
-    width: 220px;
+    width: fit-content;
     transition: all .3s;
     /* adjust to your design */
     /* vertical space */
     scroll-margin-inline: 40px;
-    /* horizontal space */ 
+    /* horizontal space */
+}
+.item:focus {
+    outline: none;
+    padding: 1%;
+    /* scroll-margin: 50%; */
+    scroll-margin-block: 50px;
+    /* 👈 gives breathing room */
+    border-radius: 4px;
+    box-shadow: 0 0 1px 1px lightblue;
+    border: 1px solid blue;
+    transition: all .3s;
 }
