@@ -55,10 +55,17 @@
 
 .items-container.sort .item {
     scroll-snap-align: start;
+        width: 150px;
 }
 
 .item:focus {
     outline: none;
     scroll-margin: 20px;
     /* 👈 gives breathing room */
+}
+.item {
+    scroll-margin-block: 60px;
+    /* vertical space */
+    scroll-margin-inline: 40px;
+    /* horizontal space */
 }

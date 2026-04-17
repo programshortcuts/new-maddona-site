@@ -95,12 +95,58 @@ export function initItemsScroll() {
     };
 
     const itemKeydown = (e) => {
-        const key = e.key.toLowerCase()
-        if (key.toLowerCase() === 'enter') {
-            e.currentTarget.classList.toggle('clicked-item');
-            scrollToItem(e.currentTarget);
+        const key = e.key.toLowerCase();
+        const current = e.currentTarget;
+
+        const container = current.closest('.items-container');
+        if (!container) return;
+
+        const items = Array.from(container.querySelectorAll('.item'));
+        const index = items.indexOf(current);
+
+        let nextIndex = null;
+
+        const isVertical = container.classList.contains('sort');
+
+        // =========================
+        // 🎯 HORIZONTAL MODE
+        // =========================
+        if (!isVertical) {
+            if (key === 'arrowright') nextIndex = index + 1;
+            if (key === 'arrowleft') nextIndex = index - 1;
         }
-        // console.log(key)
+
+        // =========================
+        // 🎯 VERTICAL / GRID MODE
+        // =========================
+        if (isVertical) {
+            const containerWidth = container.clientWidth;
+            const itemWidth = current.offsetWidth + 16; // include gap
+            const itemsPerRow = Math.floor(containerWidth / itemWidth) || 1;
+
+            if (key === 'arrowright') nextIndex = index + 1;
+            if (key === 'arrowleft') nextIndex = index - 1;
+            if (key === 'arrowdown') nextIndex = index + itemsPerRow;
+            if (key === 'arrowup') nextIndex = index - itemsPerRow;
+        }
+
+        // =========================
+        // 🎯 ENTER KEY
+        // =========================
+        if (key === 'enter') {
+            current.classList.toggle('clicked-item');
+            scrollToItem(current);
+            return;
+        }
+
+        // =========================
+        // 🎯 APPLY NAVIGATION
+        // =========================
+        if (nextIndex !== null && items[nextIndex]) {
+            e.preventDefault();
+            items[nextIndex].focus();
+            scrollToItem(items[nextIndex]);
+        }
     };
 
     allItems.forEach(item => {
