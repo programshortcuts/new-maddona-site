@@ -63,6 +63,7 @@ export async function injectPage(href){
     // Grab the actual page content
     const newContent = doc.querySelector(".main-landing-page");
 
+
     if (!newContent) {
         throw new Error(`Page missing .main-landing-page wrapper: ${href}`);
     }
@@ -88,6 +89,7 @@ export async function injectPage(href){
         FORBID_ATTR: ['style']
 
     })
+    mainLandingPage.scrollTo(0,0)
     initImageHandling()
     initProdImgHandle()
     initItemsScroll()

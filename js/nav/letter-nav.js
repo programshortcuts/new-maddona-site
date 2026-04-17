@@ -39,7 +39,7 @@ export function initLetterNav({
         const key = e.key.toLowerCase();
         if (!/^[a-z]$/.test(key)) return;
 
-        const selectors = '#submitBtn,ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .letter-alphabet, .product-title, .item, #instagramLogo, #facebookLogo';
+        const selectors = '#submitBtn,.mobile-header-nav > ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item, #instagramLogo, #facebookLogo';
 
         const allEls = [...document.querySelectorAll(selectors)].filter(isActuallyVisible);
 

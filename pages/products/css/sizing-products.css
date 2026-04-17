@@ -11,36 +11,30 @@
     width: 170px;
     height: 150px;
 }
+.products-container-header>button>img {
+    height: 50px;
+}
 .products-container-header {
     /* width: fit-content; */
     /* height: fit-content; */
 }
-.products-container-header>h2>a {
-    width: fit-content;
-    height: auto;
+.products-container-header > button {
+    /* display: flex; */
+}
+.products-container-header {
+    /* width: fit-content; */
+    /* height: fit-content; */
+}
+.product-page-container .products-container-header> button.drop-down {
+    /* width: fit-content; */
+    /* height: auto; */
 }
 .products-container-header > button {
-    display: flex;
-}
-.products-container-header > button > img{
-    height: 50px;
-}
-.products-container-header > button > img#skinbetterLogo{
-    height: 40px;
-    
+    /* display: flex; */
 }
 .products-container-header > .img-wrapper > img {
     width: 90%;
 }
 
 
-.products-content > .filter-nav {
-    width: 50%;
-    /* border: 2px solid   magenta; */
-    
-}
-.products-content > .filter-nav button{
-    width: 50px !important;
-    max-width: 50px;
-    /* border: 1px solid blue */
-}
+
