@@ -42,7 +42,7 @@
 }
 
 .items-container.sort {
-    /* width: 90vw; */
+    width: 110vw;
     flex-wrap: wrap;
     overflow-x: scroll;
     overflow-y: auto;
@@ -62,10 +62,10 @@
 .item:focus {
     outline: none;
     scroll-margin: 50%;
+    scroll-margin-block: 50px;
     /* 👈 gives breathing room */
 }
 .item {
-    scroll-margin-block: 60px;
     /* vertical space */
     scroll-margin-inline: 40px;
     /* horizontal space */
