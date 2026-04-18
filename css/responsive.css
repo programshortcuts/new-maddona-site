@@ -122,7 +122,8 @@
         /* 🔑 critical */
         left: 0;
         width: 100%;
-        height: 90px;
+        /* height: 90px; */
+        /* height: 90px; */
         z-index: 10;
     }
 
