@@ -1,12 +1,12 @@
 @media screen and (min-width:723px) {
     .home-page-header {
-        float: left;
-        width: 45%;
+        /* float: left; */
+        /* width: 45%; */
     }
     .home-page-container p {
-        font-size: 1.2rem;
-        line-height: 1.1;
-        list-style: none;
+        /* font-size: 1.2rem; */
+        /* line-height: 1.1; */
+        /* list-style: none; */
     }
 }
 
@@ -15,19 +15,16 @@
         
         margin: 0 5%;
     }
+    
     .home-page-header {
         float: left;
-        width: 45;
-    }
-    .home-page-header {
-        float: left;
-        width: 45;
+        width: 45%;
     }
 
     .home-page-container>article.mission-state>p {
-        padding: 1%;
-        padding-top: 5%;
-        margin-top: 2%;
+        /* padding: 1%; */
+        /* padding-top: 5%; */
+        /* margin-top: 2%; */
     }
 }
 @media screen and (max-width:533px) {
