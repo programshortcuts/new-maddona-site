@@ -11,7 +11,7 @@
 }
 .page-header > .page-title-container{
     display: flex;
-    flex-basis: 67%;
+    flex-basis: 90%;
     padding-left: 5%;
     padding-top: 0 !important;
     flex-wrap: wrap;

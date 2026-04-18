@@ -1,41 +1,41 @@
 /* responsive.css */
 @media screen and (min-width:533px) {
+    .main-landing-page {
+            padding-top: 20%;
+        }
     .mobile-header-nav ul {
         padding-top: 0%;
     }
+    #contactMenuNavLink>a {
+        width: 80% !important;
+    }
 
+    #contactMenuNavLink {
+        
+        width: 100%;
+        align-items: flex-start !important;
+    }
 
+    #contactMenuNavLink>.social-media-container {
+        padding-left: 20% !important;
+        display: flex;
+        padding-left: 20% !important;
 
-#contactMenuNavLink>a {
-    width: 80% !important;
-}
+        width: 100%;
+        justify-content: center;
+    }
 
-#contactMenuNavLink {
-    
-    width: 100%;
-    align-items: flex-start !important;
-}
+    #contactMenuNavLink>.social-media-container>.social-media-link-container a {
+        display: inline-flex;
+        flex-direction: column;
+        width: 50% !important;
+    }
 
-#contactMenuNavLink>.social-media-container {
-    padding-left: 20% !important;
-    display: flex;
-    padding-left: 20% !important;
-
-    width: 100%;
-    justify-content: center;
-}
-
-#contactMenuNavLink>.social-media-container>.social-media-link-container a {
-    display: inline-flex;
-    flex-direction: column;
-    width: 50% !important;
-}
-
-#contactMenuNavLink>.social-media-container {
-    
-    align-self: flex-end;
-    width: 80%;
-}
+    #contactMenuNavLink>.social-media-container {
+        
+        align-self: flex-end;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:532px) {
@@ -127,5 +127,5 @@
     #medicalSpaServicesNavLink {
         padding-left: 10%;
     }
-        
+    
 }
