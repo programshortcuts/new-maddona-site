@@ -1,9 +1,9 @@
 /* carousel.css */
 .reviews-carousel {
     /* float: right; */
-    margin: 0 8%;
-    /* margin: 40px auto; */
-    max-width: 400px;
+    /* margin: 0 8%; */
+    /* margin-top: -10%; */
+    max-width: 300px;
     text-align: center;
 }
 .reviews-carousel::after{
