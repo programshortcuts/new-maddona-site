@@ -1,14 +1,14 @@
 /* colors-med-spa-serv.css */
-.med-spa-serv .section>h2 {
+.med-spa-serv-container .section>h2 {
     color: var(--font-p-clr);
 }
 
-.med-spa-serv .section-title,
+.med-spa-serv-container .section-title,
 .page-title {
     color: var(--font-p-clr);
 }
 
-.med-spa-serv .section p {
+.med-spa-serv-container .section p {
 
     color: var(--font-p-clr);
 }
