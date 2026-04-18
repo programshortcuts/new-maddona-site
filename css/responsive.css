@@ -3,10 +3,6 @@
     .main-landing-page {
         margin-top: -5%;
     }
-    .home-page-header {
-        float: left;
-        width: 45%;
-    }   
 }
 @media screen and (min-width:533px) {
     .main-landing-page {
@@ -59,13 +55,13 @@
     .page-header .page-title { 
         font-size: 1.5rem !important; 
     }
-        .page-header>.page-title-container {
-            display: flex;
-            flex-basis: 67%;
-            padding-left: 5%;
-            padding-top: 0 !important;
-            flex-wrap: wrap;
-        }
+    .page-header>.page-title-container {
+        display: flex;
+        flex-basis: 67%;
+        padding-left: 5%;
+        padding-top: 0 !important;
+        flex-wrap: wrap;
+    }
     
     .mobile-header-nav ul {
         padding-top: 2%;
@@ -97,9 +93,7 @@
 }
 
 @media screen and (max-width:500px) {
-    .home-page-header {
-        padding-top: 5%;
-    }
+
     .mobile-header-nav,
     .mobile-header-nav>ul,
     .mobile-header-nav>ul>li,

@@ -1,5 +1,21 @@
+@media screen and (min-width:723px) {
+    .home-page-header {
+        float: left;
+        width: 45%;
+    }
+}
 
+@media screen and (min-width:535px) {
+    .home-page-container {
+        margin: 0 5%;
+    }
 
+    .home-page-container>article.mission-state>p {
+        padding: 1%;
+        padding-top: 5%;
+        margin-top: 2%;
+    }
+}
 @media screen and (max-width:533px) {
 
     .home-page-container{
@@ -11,13 +27,10 @@
         margin-top: 2%;
     }
 }
-@media screen and (min-width:535px) {
-    .home-page-container {
-        margin: 0 5%;
-    }
-    .home-page-container>article.mission-state>p {
-            padding: 1%;
-            padding-top: 5%;
-            margin-top: 2%;
+
+
+@media screen and (max-width:500px) {
+    .home-page-header {
+        padding-top: 5%;
     }
 }
