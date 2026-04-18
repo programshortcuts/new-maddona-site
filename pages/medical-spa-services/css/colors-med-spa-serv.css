@@ -1,0 +1,14 @@
+/* colors-med-spa-serv.css */
+.med-spa-serv .section>h2 {
+    color: var(--font-p-clr);
+}
+
+.med-spa-serv .section-title,
+.page-title {
+    color: var(--font-p-clr);
+}
+
+.med-spa-serv .section p {
+
+    color: var(--font-p-clr);
+}

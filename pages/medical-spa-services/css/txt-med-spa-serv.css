@@ -1,16 +1,16 @@
-/* text-med-spa-serv.css */
-.more-info-links {
+/* txt-med-spa-serv.css */
+.med-spa-serv-container .more-info-links {
     /* display: flex; */
     font-size: 2rem;
 }
-.section p {
+.med-spa-serv-container .section p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
 
 
 
-.more-info-links button {
+.med-spa-serv-container .more-info-links button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .med-spa-serv-container .content>p {
@@ -19,7 +19,7 @@
 
      /* text-shadow: 1px 1px 1px black; */
  }
- section button.section-title{
+.section button.section-title{
     font-size: 1.3rem !important;
     font-family: Arial, Helvetica, sans-serif;
     background-color: inherit;
@@ -29,7 +29,7 @@
 
     text-decoration: none;
  }
- .content-box > h3{
+ .med-spa-serv-container .content-box > h3{
     color: var(--font-p-clr);
     text-shadow: 1px 1px 1px whitesmoke;
  }

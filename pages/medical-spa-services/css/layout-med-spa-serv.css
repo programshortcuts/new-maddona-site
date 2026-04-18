@@ -4,29 +4,30 @@
     
 }
 
-section>.content>.img-wrapper {
+.med-spa-serv-container .section>.content>iframe {
+    float: left;
+}
+.med-spa-serv-container .section>.content>.img-wrapper {
     float: right;
 }
 
-.section.colored .more-info-links {
+.med-spa-serv-container .section.colored .more-info-links {
     display: flex;
     gap: 1%;
     justify-content: flex-end;
 }
 
-.section .more-info-links {
+.med-spa-serv-container .section .more-info-links {
     display: none;
 }
 
-.section>button.section-title {
+.med-spa-serv-container .section>button.section-title {
     display: flex;
     flex-wrap: wrap;
 }
-section>.content>iframe {
-    float: left;
-}
 
-section::after {
+
+.med-spa-serv-container section::after {
     content: "";
     display: block;
     clear: both;

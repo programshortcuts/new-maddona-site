@@ -1,19 +1,17 @@
 /* position-home.css */
-bio,
+.home-page-header {
+    float: right;
+}
 article.mission-state {
     position: relative;
 }
-.bio >.home-page-header{
-    /* position: relative; */
-    float: right;
+.home-page-container .address-num-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .mission-state > .animation-container {
     float: right;
-    /* position: absolute; */
-    /* top: 0; */
-    /* border: 1px solid black; */
-    /* width: 50%; */
-    /* z-index: 101; */
 }
 .home-page-container .animation-container::after,
 .home-page-header::after{
@@ -21,5 +19,18 @@ article.mission-state {
     display: block;
     clear: both;
 }
+.home-page-container .mission-state .section{
 
-
+    clear: both;
+}
+.home-page-container .section>.content>.img-wrapper {
+    float: left;
+}
+.home-page-container .section>.content>.img-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.home-page-container .section>.content img {
+    display: block;
+}

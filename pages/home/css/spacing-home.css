@@ -5,14 +5,22 @@
 .address-num-container {
     /* margin-top: 1%; */
 }
- .home-page-header {
-     padding-top: 0%;
- }
-.bio,
-.mission-state{
+.home-page-header {
+    padding-top:  1%;
+    padding-left: 3%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.home-page-container p {
     line-height: 1.75;
+    margin: 2% 0;
     /* padding: 2rem; */
 }
 .mission-state>.animation-container {
     margin-right: -10%;
+}
+.home-page-container .home-page-item>.section>.content>.img-wrapper {
+    margin-right: 15px;
+    /* margin-bottom: 10px; */
 }
