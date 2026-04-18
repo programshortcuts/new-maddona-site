@@ -37,7 +37,7 @@
     /* align-items: flex-end; */
 }
 .mobile-header-nav>ul>li>a {
-    display: flex;
+    display: inline-flex;
     /* or inline-flex */
     align-items: center;
     justify-content: center;

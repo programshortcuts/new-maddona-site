@@ -13,3 +13,19 @@
     top: 8%;
     z-index: 100;
 }
+.mobile-header-nav > ul {
+    /* position: relative; */
+}
+.mobile-header-nav > ul > li{
+    /* position: relative; */
+}
+.mobile-header-nav > ul > li#contactMenuNavLink{
+    position: relative;
+}
+li#contactMenuNavLink > a{
+
+    /* position: fixed; */
+}
+li#contactMenuNavLink > a > .social-media-link-container{
+    /* position: fixed; */
+}
