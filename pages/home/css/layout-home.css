@@ -4,9 +4,6 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
- }
-.mission-state > .home-page-header{
-
 }
 .mission-state>.animation-container {
     display: flex;
@@ -15,3 +12,7 @@
 }
 
 
+.home-page-header {
+    display: flex;
+    flex-direction: column;
+}

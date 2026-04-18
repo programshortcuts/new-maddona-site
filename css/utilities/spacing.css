@@ -13,10 +13,6 @@
 .page-header-logos{
     padding-right: 1%;
 }
-
-.main-landing-page {
-    padding-bottom: 18%;
-}
 #mdvipImgLink {
     padding: 2%;
 }
@@ -31,4 +27,8 @@
 }
 .mobile-header-nav>ul>li>a {
     padding: 1%;
+}
+
+.main-landing-page {
+    padding-bottom: 30%;
 }
