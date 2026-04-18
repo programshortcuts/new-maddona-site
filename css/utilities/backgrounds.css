@@ -10,7 +10,7 @@
 .section#botoxAndFillers {
     background-image: url('../../pages/medical-spa-services/media/botox-filler.webp');
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position-y: 30%;
     background-position-x: 0%;
     filter: grayscale(100%);
 }

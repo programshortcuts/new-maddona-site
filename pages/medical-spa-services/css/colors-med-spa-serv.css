@@ -8,7 +8,16 @@
     color: var(--font-p-clr);
 }
 
-.med-spa-serv-container .section p {
 
+.med-spa-serv-container .section p {
+    
     color: var(--font-p-clr);
+}
+.med-spa-serv-container .section#botoxAndFillers .content p { 
+    color: var(--font-p-clr);
+    font-size: 1.05rem;
+    text-shadow: -3px 1px  white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+
 }
