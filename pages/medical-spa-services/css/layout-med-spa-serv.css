@@ -23,9 +23,21 @@
 
 .med-spa-serv-container .section>button.section-title {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    border: 1px solid blue;
+    justify-content: space-between;
 }
 
+.med-spa-serv-container .section>button.section-title > span{
+    display: inline-flex;
+    border: 1px solid red;
+    width: 70%;
+    flex-basis: 80% !important;
+}
+.med-spa-serv-container .section>button.section-title > span{
+    flex-basis: 10%;
+}
 
 .med-spa-serv-container section::after {
     content: "";

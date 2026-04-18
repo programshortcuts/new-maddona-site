@@ -1,4 +1,7 @@
 /* spacing-home.css */
+.home-page-item{
+    padding-top: 2%;
+}
 .page-container.home-page-container{
     padding-top: 15% !important;
 }

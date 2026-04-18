@@ -3,11 +3,25 @@
         float: left;
         width: 45%;
     }
+    .home-page-container p {
+        font-size: 1.2rem;
+        line-height: 1.1;
+        list-style: none;
+    }
 }
 
 @media screen and (min-width:535px) {
     .home-page-container {
+        
         margin: 0 5%;
+    }
+    .home-page-header {
+        float: left;
+        width: 45;
+    }
+    .home-page-header {
+        float: left;
+        width: 45;
     }
 
     .home-page-container>article.mission-state>p {
@@ -31,6 +45,6 @@
 
 @media screen and (max-width:500px) {
     .home-page-header {
-        /* padding-top: 5%; */
+        padding-top: 5%;
     }
 }
