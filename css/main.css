@@ -1,10 +1,13 @@
 
 /* main.css */
 /* @import url('responsive.css'); */
+@import url('components/page-header/page-header.css');
+
 @import url('components/mobile-header-nav/mobile-header-nav.css');
 @import url('components/mobile-header-nav/layout-mob-head-nav.css');
 @import url('components/mobile-header-nav/position-mob-head-nav.css');
 @import url('components/mobile-header-nav/sizing-mob-head-nav.css');
+@import url('components/mobile-header-nav/text-mob-head-nav.css');
 
 @import url('components/main-landing-page/main-landing-page.css');
 @import url('components/main-landing-page/layout-main-land-page.css');
@@ -25,7 +28,7 @@
 
 /* @import url('utilities/borders.css'); */
 /* @import url('utilities/display.css'); */
-@import url('utilities/effects.css');
+/* @import url('utilities/effects.css'); */
 /* @import url('utilities/layout.css'); */
 /* @import url('utilities/position.css'); */
 /* @import url('utilities/spacing.css'); */

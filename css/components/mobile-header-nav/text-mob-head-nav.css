@@ -1,0 +1,32 @@
+/* text.css */
+.page-header .page-title{
+    text-decoration: none;
+    letter-spacing: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.page-container-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.page-header .tel-num{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--font-p-clr);
+}
+a.tel-num:visited{
+    color: var(--font-p-clr);
+}
+.mobile-header-nav {
+    font-size: 1.4rem;
+}
+.mobile-header-nav ul {
+    list-style: none;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+.mobile-header-nav li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: .9rem;
+}
