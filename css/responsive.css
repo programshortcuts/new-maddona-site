@@ -1,73 +1,17 @@
 /* responsive.css */
-@media screen and (max-width:500px) {}
 @media screen and (min-width:533px) {
-    .page-header{
-        position: fixed;
-        z-index: ;
-        display: flex;
-        background-color: rgba(0,0,0,0);
-        /* filter: opacity(0); */
-        /* opacity: 0; */
-    }
-    .mobile-header-nav{
-        border: 3px solid magenta;
-        font-size: 2rem;
-        position: relative;
+   
+}
+@media screen and (max-width:500px) {
+    .mobile-header-nav > ul > li >a {
+        /* border: 3px solid magenta; */
+        font-size: 100% !important;
+        
     }
     #sideNavBtn{
-        position: absolute;
-        top: 50%;
-        min-height: 50px;
-        min-width:  50px;
-    }
-    .mobile-header-nav ul{
-        display: flex;
-        /* justify-content: space-evenly; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        list-style-type: none;
-    }
-    .mobile-header-nav li{
-        flex-basis: 20%;
-        /* flex-grow: 1; */
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
         
     }
-    .mobile-header-nav li a{
-        border: 3px solid blue;
-        display: flex;
-        text-align: center;
-        width: 100%;
-        /* height: fit-content; */
-        display: inline-block;
-        text-decoration: none;
-    }
-    .mobile-header-nav ul li#contactNavLink{
-        /* flex-basis: 20% !important; */
-        /* flex-shrink: 1; */
-    }
-    .social-media-link-container {
-        background-color: yellow;
-    }
-    .social-media-link-container > a{
-        /* height: fit-content; */
-        /* display: inline-flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-    }
-    .social-media-link-container > a >svg{
-        width: 100%;
-        height: auto;
-        max-height: 89px;
-        transform: scale(1);
-        border: 10px solid red
-    }
-    .social-media-link-container > a >svg>path{
-        
-    }
+
 }
 
 

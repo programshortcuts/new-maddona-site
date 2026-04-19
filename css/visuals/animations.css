@@ -1,8 +1,43 @@
 /* animations.css */
-.text, .logo {
-  /* position: absolute; */
-  width: 100%;
-  text-align: center;
-  transition: opacity 2s ease;
+.smoke-container {
+  position: relative;
+  width: 400px;
+  /* adjust */
+  overflow: hidden;
 }
 
+.smoke-img {
+  width: 100%;
+  display: block;
+
+  /* animation */
+  animation: smokeFade 1s ease-out forwards;
+
+  /* smoky breakup effect */
+  filter: blur(0px);
+}
+
+@keyframes smokeFade {
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+  }
+
+  30% {
+    opacity: 0.9;
+    filter: blur(2px);
+  }
+
+  70% {
+    opacity: 0.5;
+    transform: translateX(0px);
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(2px);
+    filter: blur(12px);
+  }
+}

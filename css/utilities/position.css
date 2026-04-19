@@ -7,10 +7,11 @@
     position: fixed;
     z-index: 1;
 }
-.page-header img#madonnaShilouetteLogo {
+.page-header .img-wrapper{
     position: absolute;
     right: 0
 }
+/* .page-header img#madonnaShilouetteLogo { */
 .mobile-header-nav {
     position: fixed;
     z-index: 2;
@@ -20,4 +21,17 @@
     position: absolute;
     top: 0%;
     z-index: 999
+}
+.social-media-link-container {
+    position: relative;
+}
+.social-media-link-container a{
+
+}
+.social-media-link-container>a>svg {
+    position: absolute;
+    /* right: 190%; */
+    /* top: 10%; */
+    /* padding-top: 15%; */
+    /* padding-left: 15%; */
 }

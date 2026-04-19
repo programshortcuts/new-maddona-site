@@ -1,22 +1,5 @@
 /* sizing-home.css*/
-.mission-state>.animation-container {
-    width: 50%;
-    padding:0 !important;
+section img,
+article img {
+    max-width: 300px;
 }
-.mission-state>.animation-container >img{
-    padding: 0!important;
-    width: 150%;
- }
- .home-page-container .section>.content img {
-     width: 150px;
-     /* 👈 give it width instead of just max-height */
-     height: auto;
- }
-
- .home-page-header {
-     width: 80%;
- }
- .home-page-header >img {
-     width: 100%;
-     min-width: 280px;
- }

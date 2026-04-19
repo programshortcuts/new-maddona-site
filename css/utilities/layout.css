@@ -25,18 +25,15 @@
     display: inline-block;
     text-align: center;
 }
-.mobile-header-nav ul li#contactNavLink {
-    /* flex-basis: 20% !important; */
-    /* flex-shrink: 1; */
+.social-media-link-container{
+    display: flex;
+    flex-direction: column;
 }
-
-.social-media-link-container {
-    /* background-color: yellow; */
-}
-
 .social-media-link-container>a {
-    /* height: fit-content; */
-    /* display: inline-flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-link-container>a>svg {
+    display: block;
 }
