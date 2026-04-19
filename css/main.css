@@ -5,9 +5,8 @@
 @import url('components/page-header.css');
 @import url('components/main-landing-page.css');
 
-/* @import url('utilities/background-colors.css'); */
-@import url('utilities/colors.css');
 @import url('utilities/backgrounds.css');
+@import url('utilities/colors.css');
 @import url('utilities/layout.css');
 @import url('utilities/sizing.css');
 @import url('utilities/position.css');
@@ -42,8 +41,6 @@
 
 
 
-
-
 /* products-styles */
 /* @import url('../pages/products/css/animations/items-scroll.css'); */
 /* @import url('../pages/products/css/borders-products.css'); */
@@ -52,16 +49,6 @@
 /* @import url('../pages/products/css/sizing-products.css'); */
 /* @import url('../pages/products/css/spacing-products.css'); */
 /* @import url('../pages/products/css/txt-products.css'); */
-
-
-/* home-styles */
-/* @import url('../pages/home/css/borders-home.css'); */
-/* @import url('../pages/home/css/layout-home.css'); */
-/* @import url('../pages/home/css/position-home.css'); */
-/* @import url('../pages/home/css/spacing-home.css'); */
-/* @import url('../pages/home/css/sizing-home.css'); */
-/* @import url('../pages/home/css/txt-home.css'); */
-
 
 
 /* med-spa-serv-styles */
