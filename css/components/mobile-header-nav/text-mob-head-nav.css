@@ -17,7 +17,7 @@ a.tel-num:visited{
     color: var(--font-p-clr);
 }
 .mobile-header-nav {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
 }
 .mobile-header-nav ul {
     list-style: none;
@@ -26,7 +26,5 @@ a.tel-num:visited{
 
 .mobile-header-nav li a {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
     text-decoration: none;
-    font-size: .9rem;
 }

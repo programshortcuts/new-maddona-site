@@ -1,6 +1,5 @@
 /* layout-mob-head-nav.css */
 .mobile-header-nav ul{
-    border: 2px solid blue;
     display: flex;
     align-items: flex-start;
 }
@@ -16,7 +15,6 @@
 }
 .mobile-header-nav ul li#contactNavLink{
     /* flex-basis: 20% !important; */
-    border: 1px solid magenta
     /* flex-shrink: 1; */
 }
 .social-media-container >

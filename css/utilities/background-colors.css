@@ -7,7 +7,9 @@
 .page-wrapper{
     background-color: var(--bg-clr) ;
 }
-.page-header,
+.page-header{
+    background-color: var(--bg-clr) !important;
+}
 .mobile-header-nav{
     
     
