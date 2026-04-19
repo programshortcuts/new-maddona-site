@@ -34,7 +34,13 @@ function initMain(){
             }
         })
     }
-    
+    document.querySelectorAll("*").forEach(el => {
+            [...el.attributes].forEach(attr => {
+                if (attr.name.startsWith("on")) {
+                    console.log("INLINE EVENT:", el, attr);
+                }
+            });
+        });    
 }
 
 function setupGlobalListeners(){

@@ -1,8 +1,10 @@
 // inject-content.js
+
 import { isSafePath } from "./security-utils.js";
 // import { maybeInitAnimations } from "../app.js";
 // import { initDropDown } from "../ui/drop-down.js";
 import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
+import { initToggleNav } from "../ui/toggle-nav.js";
 import { initFilterSortItems } from "../ui/filter-sort-items.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 import { initProdImgHandle } from "../visuals/handleProductImgs.js";
@@ -25,6 +27,7 @@ document.addEventListener("submit", (e) => {
 });
 export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
+    
     injectPage(DEFAULT_PAGE)
     
     mobileHeaderNav.addEventListener('click', e => {
@@ -35,6 +38,7 @@ export function initInjectContentListeners(){
         if (!href || href === "#") return;
         e.preventDefault();
         injectPage(href);
+        
     })
     
 }
@@ -71,6 +75,9 @@ export async function injectPage(href){
     }
 
     // ✅ Sanitize before injecting
+    // const cleanHTML = DOMPurify.sanitize(fetchedHtml, {
+    //     FORBID_TAGS: ['script']
+    // });
     mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.innerHTML, {
         ALLOWED_TAGS: [
             'form', 'input', 'textarea', 'label',
@@ -88,7 +95,9 @@ export async function injectPage(href){
             'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r',
             'type', 'name', 'value', 'for', 'required', 'action', 'method'
         ],
-        FORBID_ATTR: ['style']
+        FORBID_TAGS: ['script', 'style'],   // 👈 ADD THIS
+
+        FORBID_ATTR: ['style', 'script', 'onerror', 'onclick', 'onload']
 
     })
     mainLandingPage.scrollTo(0,0)
@@ -97,4 +106,5 @@ export async function injectPage(href){
     initItemsScroll()
     initSectionsDropDown()   
     initFilterSortItems()
+    initToggleNav()
 }

@@ -79,5 +79,5 @@
     color: red;
 }
 .hide {
-    display: none;
+    display: none !important;
 }
