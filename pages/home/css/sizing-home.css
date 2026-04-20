@@ -1,5 +1,11 @@
 /* sizing-home.css*/
-section img,
-article img {
-    max-width: 300px;
+.page-container.home-page-container {
+    width: 100%;
+}
+section img {
+    /* max-height: 160px; */
+    max-width:  100px;
+}
+#iconShilouette{
+    max-width: 150px;
 }

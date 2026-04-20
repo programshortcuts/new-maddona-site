@@ -2,7 +2,8 @@
 :root {
     /* --bg-clr: rgb(183, 181, 167); */
     --bg-clr: #ddd;
-    --bg-header: #878a8b;
+    --bg-header: #ddd;
+    /* --bg-header: #878a8b; */
 }
 
 

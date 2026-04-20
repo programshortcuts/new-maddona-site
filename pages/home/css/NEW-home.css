@@ -1,0 +1,17 @@
+/* NEW-home.css */
+.home-page-header img {
+    border-radius: 8px;
+    /* height: 10vh; */
+}
+
+.home-page-header section p {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+.address-num-container p {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+ }
+ .section-title:active,.section-title:focus{
+    border: 10px solid red;
+    display: block;
+ }
