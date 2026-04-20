@@ -1,0 +1,9 @@
+.expand{
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    background-color: var(--bg-clr);
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    transition: all 800ms;
+}

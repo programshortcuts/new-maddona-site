@@ -1,8 +1,8 @@
 /* animations.css */
 .smoke-container {
-  position: relative;
+  /* position: relative; */
   /* adjust */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .smoke-img {

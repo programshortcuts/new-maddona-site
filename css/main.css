@@ -2,8 +2,10 @@
 /* main.css */
 
 @import url('visuals/animations.css');
+/* ui */
+@import url('ui/toggle-nav.css');
 
-
+/* utilities */
 @import url('utilities/backgrounds.css');
 @import url('utilities/borders.css');
 @import url('utilities/colors.css');
