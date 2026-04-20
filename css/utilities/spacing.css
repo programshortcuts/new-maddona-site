@@ -1,4 +1,7 @@
 /* spacing.css */
+.mobile-header-nav{
+    margin-top: .5%;
+}
 .main-landing-page {
     padding-top: 12%;
 }

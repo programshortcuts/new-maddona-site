@@ -5,7 +5,7 @@
 @media screen and (max-width:890px) {
     .page-header .page-title-container{
         /* width: 50%; */
-        flex-basis: 60%;
+        flex-basis: 76%;
         font-size: .8rem;
     }
     #sideNavBtn {

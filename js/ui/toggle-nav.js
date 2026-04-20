@@ -11,6 +11,6 @@ export function initToggleNav() {
     });
     sideNavBtn.addEventListener('click', (e) => {
         const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
-        mobileHeaderNavUl.classList.toggle('hide')
+        mobileHeaderNavUl.classList.toggle('expand')
     });
 }
