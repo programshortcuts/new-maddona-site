@@ -1,10 +1,14 @@
 /* toggle-nav.css */
-.page-wrapper.expand{
-
+.page-wrapper.expand >.page-header .img-wrapper {
+    position: absolute;
+    right: 0%;
+    z-index: 99 !important;
 }
+
 .page-wrapper.expand > .mobile-header-nav{
     height: 50vh;
-    position: absolute;
+    position: sticky;
+    z-index: 1;
     top: 0;
     background-color: var(--bg-clr);
     border-bottom: 1px solid black;
@@ -13,8 +17,8 @@
 }
 
 .page-wrapper.expand>.mobile-header-nav > ul > li{
-    padding-top: 3%;
-    padding-left: 4%;
+    padding-top: 5%;
+    padding-left: 2%;
     transition: all 250ms;
 
 }
