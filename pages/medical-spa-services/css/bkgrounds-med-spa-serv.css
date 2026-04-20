@@ -1,0 +1,36 @@
+/* section#longevityMedicine {
+    background-image: url('../../pages/medical-spa-services/media/longetivy-med.jpeg');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 0%;
+    filter: saturate(1);
+    filter: brightness(1);
+} */
+.section#botoxAndFillers {
+    background-image: url('../../../pages/medical-spa-services/media/botox-filler.webp');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 0%;
+    filter: grayscale(100%);
+}
+.section#peptides {
+    background-image: url('../../../pages/medical-spa-services/media/peptide.jpeg');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 0%;
+    filter: grayscale(100%);
+}
+.section#IVinfusionTherapy {
+    background-image: url('../../../pages/medical-spa-services/media/iv-infusion.jpeg');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 0%;
+    filter: grayscale(100%);
+}
+/* .section#microNeedling {
+    background-image: url('../../../pages/medical-spa-services/media/microneedling.jpg.webp');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 0%;
+    filter: grayscale(100%);
+} */

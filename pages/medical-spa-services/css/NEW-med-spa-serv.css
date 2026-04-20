@@ -1,0 +1,22 @@
+/* layout-med-spa-serv.css */
+.med-spa-serv-container {
+    display: flex;
+    flex-direction: column;
+}
+.med-spa-serv-container .section {
+    margin: 3% 2%;
+    padding: 2% 1%
+}
+.med-spa-serv-container .section > button{
+    display: block;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.med-spa-serv-container img{
+    max-height: 150px !important;
+    max-width: 150px !important;
+}
