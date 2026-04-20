@@ -9,7 +9,8 @@ import { initFilterSortItems } from "../ui/filter-sort-items.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 import { initProdImgHandle } from "../visuals/handleProductImgs.js";
 import { initItemsScroll } from "../visuals/items-scroll.js";
-const mainLandingPage = document.querySelector('.main-landing-page')
+export const mainLandingPage = document.querySelector('.main-landing-page')
+export const pageWrapper = document.querySelector('.page-wrapper')
 if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
@@ -21,6 +22,7 @@ const DEFAULT_PAGE =
     "pages/bookings/bookings.html";
     
 const pageCache = new Map()
+let lastClickedLink = null
 document.addEventListener("submit", (e) => {
     if (e.target.id === "contact-form") {
         e.preventDefault();
@@ -40,8 +42,18 @@ export function initInjectContentListeners(){
         if (!href || href === "#") return;
         e.preventDefault();
         injectPage(href);
-        
+        if(e.target == lastClickedLink){
+            mainLandingPage.focus()
+
+            if(pageWrapper.classList.contains('expand')) {
+                pageWrapper.classList.remove('expand')
+            }
+            lastClickedLink = null
+            return
+        }
+        lastClickedLink = e.target
     })
+    
     document.querySelectorAll("*").forEach(el => {
         [...el.attributes].forEach(attr => {
             if (attr.name.startsWith("on")) {
