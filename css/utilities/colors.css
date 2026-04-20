@@ -49,3 +49,7 @@ a[href^="tel"] {
 .home-page-header>.address-num-container {
     color: rgb(53, 58, 46);
 }
+.social-media-link-container>a>svg {
+    /* fill:"#1877f2"; */
+    /* color: blue; */
+}

@@ -1,7 +1,6 @@
 /* animations.css */
 .smoke-container {
   position: relative;
-  width: 400px;
   /* adjust */
   overflow: hidden;
 }
@@ -11,7 +10,7 @@
   display: block;
 
   /* animation */
-  animation: smokeFade 1s ease-out forwards;
+  animation: smokeFade 2s ease-out forwards;
 
   /* smoky breakup effect */
   filter: blur(0px);

@@ -2,11 +2,10 @@
 @media screen and (min-width:533px) {
    
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:890px) {
     .mobile-header-nav > ul > li >a {
         /* border: 3px solid magenta; */
         font-size: 100% !important;
-        
     }
     #sideNavBtn{
         

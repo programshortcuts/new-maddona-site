@@ -12,28 +12,43 @@
 .mobile-header-nav ul {
     display: flex;
 }
-
-.mobile-header-nav li {
-    flex-basis: 20%;
-    /* flex-grow: 1; */
+.mobile-header-nav > ul > li {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    flex: 1 1 0;
+    min-width: 0;/* 🔥 critical */
 }
-.mobile-header-nav li a {
+li#contactNavLink {
+    flex: 1 1 0;
+    /* same behavior as others */
+    min-width: 0;
+    /* 🔥 allows shrinking */
+}
+.mobile-header-nav > ul > li > a {
     display: inline-block;
     text-align: center;
 }
-.social-media-link-container{
+.social-media-container {
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
-.social-media-link-container>a {
+
+.social-media-link-container {
+    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.social-media-link-container>a>svg {
-    display: block;
+
+.social-media-link-container a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-link-container svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
