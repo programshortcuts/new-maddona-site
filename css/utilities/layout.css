@@ -53,3 +53,7 @@ li#contactNavLink {
 .mobile-header-nav > ul > li > ul {
     display: none;
 }
+.mobile-header-nav > ul > li > ul > li{
+
+    width: 120%;
+ }

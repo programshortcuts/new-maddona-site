@@ -117,7 +117,7 @@ export async function injectPage(href){
     initItemsScroll()
     initSectionsDropDown()   
     initFilterSortItems()
-    initToggleNav()
+    
 
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {

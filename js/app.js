@@ -1,4 +1,5 @@
 // app.js
+import { initToggleNav } from "./ui/toggle-nav.js";
 import { initInjectContentListeners } from "./core/inject-content.js";
 import { initLetterNav } from "./nav/letter-nav.js";
 import { initDropDown } from "./ui/drop-down.js";
@@ -20,6 +21,7 @@ export function maybeInitAnimations() {
 addEventListener('DOMContentLoaded', initMain)
 function initMain(){
     const pageWrapper = document.querySelector('.page-wrapper')
+    initToggleNav()
     initInjectContentListeners()
     initLetterNav({
         pageWrapper

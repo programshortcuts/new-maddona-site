@@ -26,9 +26,11 @@
 .page-wrapper.expand>.mobile-header-nav > ul > li > ul {
     display: flex;
     flex-direction: column;
-    filter: opacity(1);
-    transition: all 5s;
+    /* filter: opacity(1); */
+    transition: all 1s;
 }
-.page-wrapper.expand>.mobile-header-nav>ul>li>a {
+.page-wrapper.expand>.mobile-header-nav>ul>li>ul > li a{
+    padding-left: 5%;
+    font-size: .9rem;
     
 }

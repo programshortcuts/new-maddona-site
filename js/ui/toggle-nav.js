@@ -1,6 +1,8 @@
 // toggle-nav.js
-
+let navInitialized = false
 export function initToggleNav() {
+    if (navInitialized) return
+    navInitialized = true
     const sideNavBtn = document.querySelector('#sideNavBtn')
     const imgSmoke = document.querySelector('#madonnaShilouetteLogo')
     const pageWrapper = document.querySelector('.page-wrapper')
