@@ -1,4 +1,7 @@
 /* sizing.css */
+:root{
+    --social-max-height: 3vh;
+}
 .page-header .img-wrapper img{
     height: 15vh !important;
 }
@@ -21,25 +24,17 @@
 .mobile-header-nav > ul > li > a {
     width: 100%;
 }
-.mobile-header-nav>ul>li#contactNavLink {
-    /* width: 50% !important; */
-    /* max-width: 100px                                                                                      ; */
+.social-media-container {
+    width: 100%;
 }
-.social-media-link-container {
-    /* width: 50% !important; */
-    /* height: 5vh;    */
+.social-media-link-container a {
+    width: 100%;
+    max-height: var(--social-max-height);
 }
-.social-media-link-container>a {
-    /* min-width: 180px; */
-    /* min-height: 40px; */
-    /* max-height: 5vh; */
-    /* max-width: 15vh; */
-}
-.social-media-link-container>a>svg {
-    /* min-width: 160px; */
-    /* min-height: 80px; */
-}
-li#contactNavLink {
-    /* width: 5%; */
-    /* max-width: vw; */
+.social-media-link-container svg {
+    max-height: var(--social-max-height);
+    margin-top: 4%;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
