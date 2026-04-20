@@ -1,4 +1,7 @@
 /* layout.css */
+.page-header .page-title-container h1 span{
+    white-space: nowrap;
+}
 .page-wrapper {
     display: flex;
     overflow-x: hidden;

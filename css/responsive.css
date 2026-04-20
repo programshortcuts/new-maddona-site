@@ -3,6 +3,15 @@
    
 }
 @media screen and (max-width:890px) {
+    .page-header .page-title-container{
+        /* width: 50%; */
+        flex-basis: 60%;
+        font-size: .8rem;
+    }
+    #sideNavBtn {
+        min-height: 39px;
+        min-width:  39px;
+    }
     .mobile-header-nav > ul > li >a {
         /* border: 3px solid magenta; */
         font-size: 100% !important;

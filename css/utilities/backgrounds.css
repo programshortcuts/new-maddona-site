@@ -43,19 +43,3 @@
 .animation-container #canvas {
     background-color: rgba(0, 0, 0, 0);
 }
-.mobile-header-nav>ul>li,
-.mobile-header-nav>ul>li>a {
-    /* background-color: rgba(0,0,0,0) !important; */
-    /* background-color: blue !important; */
-    /* filter: opacity(1); */
-    /* background-color: var(--bg-clr); */
-
-}
-
-.cat-title {
-    /* background-color: inherit; */
-}
-li#contactNavLink {
-
-    /* background-color: yellow; */
-}
