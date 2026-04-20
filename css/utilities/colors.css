@@ -2,7 +2,8 @@
 
 :root {
     --font-p-clr: rgb(80, 81, 75);
-    --header-clr: rgb(138, 139, 131);
+    /* --header-clr: rgb(138, 139, 131); */
+    --header-clr: rgb(87, 89, 74);
 }
 #sideNavBtn {
     color: var(--header-clr);
