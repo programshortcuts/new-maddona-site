@@ -4,6 +4,7 @@ export function initToggleNav() {
     const sideNavBtn = document.querySelector('#sideNavBtn')
     const imgSmoke = document.querySelector('#madonnaShilouetteLogo')
     const pageWrapper = document.querySelector('.page-wrapper')
+    const mainLandingPage = document.querySelector('.main-landing-page')
     sideNavBtn.addEventListener('keydown', (e) => {
         const key = e.key.toLowerCase()
         if(key == 'enter'){
@@ -12,10 +13,17 @@ export function initToggleNav() {
     });
     sideNavBtn.addEventListener('click', (e) => {
         // const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
+        console.log('here')
         expandToggle()
 
     });
     function expandToggle(){
         pageWrapper.classList.toggle('expand')   
     }
+    mainLandingPage.addEventListener('focus', (e) => {
+        // console.log('here')
+        if(pageWrapper.classList.contains('expand')){
+            // pageWrapper.classList.remove('expand')
+        }
+    });
 }

@@ -21,10 +21,11 @@ a.tel-num:visited{
 .mobile-header-nav ul {
     list-style-type: none;
 }
-
-.mobile-header-nav li a {
+.mobile-header-nav li a{
+    text-decoration: none;
+}
+.mobile-header-nav > ul > li >a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    text-decoration: none;
     font-size: 1.5rem;
 }

@@ -13,6 +13,7 @@
     background-color: var(--bg-clr);
     border-bottom: 1px solid black;
     border-radius: 5px;
+    padding-top: 5%;
     transition: all 800ms;
 }
 
@@ -22,7 +23,12 @@
     transition: all 250ms;
     
 }
-.page-wrapper.expand>.mobile-header-nav > ul > li,
-.mobile-header-nav > ul > li > u{
+.page-wrapper.expand>.mobile-header-nav > ul > li > ul {
+    display: flex;
+    flex-direction: column;
+    filter: opacity(1);
+    transition: all 5s;
+}
+.page-wrapper.expand>.mobile-header-nav>ul>li>a {
     
 }
