@@ -1,11 +1,8 @@
 /* swiper.css */
-.reviews-container {
-    /* spa-style soft beige */
-    margin-top: 10%;
-}
+
 .swiper {
-    width: 100%;
-    max-width: 50vw;
+    /* width: 100%; */
+    max-width: 40vw;
     background: #f6f1eb;
     border: 1px solid black;
     border-radius: 3px;

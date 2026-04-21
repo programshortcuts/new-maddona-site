@@ -9,7 +9,15 @@ section img {
 #iconShilouette{
     max-width: 150px;
 }
-.reviews-container{
-    /* font-size: ; */
-    
+.home-page-header .contact-content > .img-wrapper{
+    height: fit-content;
+}
+.home-page-header .contact-content > .img-wrapper > img{
+    width: 44vw;
+    max-width: 500px;
+    height: 10vh;
+}
+.address-num-container p {
+    width: 59%;
+    background-color: whitesmoke;
 }

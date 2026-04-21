@@ -12,12 +12,11 @@
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
  }
 .section-title:active,.section-title:focus{
-    border: 10px solid red;
-    display: block;
+    border: 30px solid lightskyblue;
+    /* display: block; */
  }
 
- .swiper {
-     width: 100%;
-     max-width: 50vw;
-    }
+
     
+
+    /* .contact-content */

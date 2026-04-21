@@ -63,18 +63,18 @@ export function initBgSlider() {
 
     let current = 0;
 
-    // setInterval(() => {
-    //     const currentSlide = slides[current];
-    //     const nextIndex = (current + 1) % slides.length;
-    //     const nextSlide = slides[nextIndex];
+    setInterval(() => {
+        const currentSlide = slides[current];
+        const nextIndex = (current + 1) % slides.length;
+        const nextSlide = slides[nextIndex];
 
-    //     // fade out current
-    //     currentSlide.classList.remove('active');
+        // fade out current
+        currentSlide.classList.remove('active');
 
-    //     // fade in next
-    //     nextSlide.classList.add('active');
+        // fade in next
+        nextSlide.classList.add('active');
 
-    //     current = nextIndex;
+        current = nextIndex;
 
-    // }, 4000);
+    }, 5500);
 }

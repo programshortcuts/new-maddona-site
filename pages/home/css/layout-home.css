@@ -1,31 +1,9 @@
 /* layout-home.css*/
-.page-container.home-page-container {
-    display: flex;
-    flex-direction: column;
-}
-.home-page-header {
-    display: flex;
-}
-.home-page-header .contact-content{
-    padding-top: 5%;
-}
-.home-page-header .img-wrapper{
+
+.home-page-header .img-wrapper {
     flex-basis: 20%;
 }
-.home-page-header .address-num-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-basis: 30%;
-}
 
-.address-num-container p{
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    /* align-items: center; */
-}
 .reviews-container {
     /* font-size: ; */
     display: flex;
@@ -36,3 +14,34 @@
     display: flex;
     flex-direction: column;
 }
+
+
+.page-container.home-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page-header {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.home-page-header .contact-content {
+    padding-top: 5%;
+    flex-basis: 30%;
+}
+.reviews-address-container {
+    display: flex;
+    flex-direction: column;
+    /* spa-style soft beige */
+    /* margin-top: 10%; */
+    justify-content: center;
+}
+/* .home-page-header .address-num-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-basis: 30%;
+} */
+

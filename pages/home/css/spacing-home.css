@@ -1,4 +1,7 @@
 /* spacing-home.css */
+.home-page-container{
+    margin-top: 5%;
+}
 .address-num-container .address-box{
-    padding: 5%
+    padding: 2%
 }
