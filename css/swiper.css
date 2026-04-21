@@ -1,29 +1,36 @@
 /* swiper.css */
-
 .swiper {
-    /* width: 100%; */
+    width: 100%;
     max-width: 40vw;
     background: #f6f1eb;
     border: 1px solid black;
     border-radius: 3px;
 }
+.review-swiper-container{
+    border: 2px solid red;
+    /* display: flex; */
+    /* align-items: flex-start; */
+}
 .swiper-wrapper{
     display: flex;
+    width: 100%;
+}
+.swiper{
+
+    width: 100%;
 }
 .swiper-slide {
+    width: 100%;
     /* background: transparent; */
     /* background-color: blue; */
     padding: 7% 3%;
-    
     font-size: 1.5rem;
     text-align: center;
     border: none;
     box-shadow: none;
-    
     color: #fff;
     /* if your bg is dark */
 }
-
 .stars {
     color: darkgoldenrod;
     font-size: 1.5rem;
