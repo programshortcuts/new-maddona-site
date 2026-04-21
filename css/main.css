@@ -4,6 +4,7 @@
 @import url('swiper.css');
 /* ui */
 @import url('ui/toggle-nav.css');
+
 /* utilities */
 @import url('utilities/backgrounds.css');
 @import url('utilities/borders.css');
@@ -13,14 +14,13 @@
 @import url('utilities/sizing.css');
 @import url('utilities/spacing.css');
 @import url('utilities/text.css');
-/* visuals */
+
 /* @import url('visuals/background-change.css '); */
 @import url('visuals/change-background.css ');
 
 
-
 /* home-styles */
-/* @import url('../pages/home/css/NEW-home.css'); */
+@import url('../pages/home/css/NEW-home.css');
 @import url('../pages/home/css/bkgrnd-home.css');
 @import url('../pages/home/css/borders-home.css');
 @import url('../pages/home/css/txt-home.css');
@@ -52,7 +52,6 @@
 @import url('../pages/products/css/txt-products.css');
 
 @import url('responsive.css');
-
 * {
     margin: 0;
     padding: 0;
@@ -61,6 +60,32 @@
 .error-message {color: red;}
 .hide {display: none !important;}
 
+/* OLD */
+/* animations/ */
+/* @import url('visuals/animations.css'); */
+/* @import url('visuals/carousel.css'); */
+/* @import url('imgs.css'); */
+/* @import url('videos.css'); */
+
+/* utilities */
+
+/* @import url('utilities/display.css'); */
+/* @import url('utilities/effects.css'); */
+
+
+
+/* bookins-styles */
+/* @import url('../pages/bookings/css/bookings.css'); */
+/* @import url('../pages/bookings/css/layout-bookings.css'); */
+
+/* contact-styles */
+/* @import url('../pages/contact/css/colors-contact.css'); */
+/* @import url('../pages/contact/css/borders-contact.css'); */
+/* @import url('../pages/contact/css/contact-form.css'); */
+/* @import url('../pages/contact/css/layout-contact.css'); */
+/* @import url('../pages/contact/css/position-contact.css'); */
+/* @import url('../pages/contact/css/sizing-contact.css'); */
+/* @import url('../pages/contact/css/spacing-contact.css'); */
 
 
 

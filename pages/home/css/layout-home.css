@@ -1,10 +1,8 @@
 /* layout-home.css*/
 .page-container.home-page-container {
-    /* width: 80% !important; */
 }
 .home-page-header {
     display: flex;
-    /* justify-content: space-around; */
 }
 .home-page-header .img-wrapper {
     flex-basis: 10%;
