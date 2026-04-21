@@ -19,7 +19,7 @@
 }
 
 .items-container.sort {
-    width: 110vw;
+    width: 140vw;
     flex-wrap: wrap;
     overflow-x: scroll;
     overflow-y: auto;
