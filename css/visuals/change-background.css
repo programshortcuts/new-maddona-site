@@ -1,3 +1,11 @@
+.home-page-header {
+    /* .contact-container>.address-num-container { */
+    background-image: url('../../imgs/rustic\ rockymoutains-1024.JPEG');
+    background-repeat: no-repeat;
+    background-position-y: 49%;
+    background-position-x: 0%;
+    filter: grayscale(50%);
+}
 .bg-slider{
     min-height: 30vh;
 }
