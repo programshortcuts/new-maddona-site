@@ -9,10 +9,10 @@
 .mission-state > p {
     padding-top: 2%;
 }
-.home-page-item .content>.img-wrapper {
+.main-item .content>.img-wrapper {
     height: fit-content;
     width: fit-content;
 }
-.home-page-item .content>.img-wrapper > img{
+.main-item .content>.img-wrapper > img{
     height: 14vh;
 }

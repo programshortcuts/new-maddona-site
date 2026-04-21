@@ -47,14 +47,16 @@
     position: relative;
 }
 .mission-state .img-wrapper{
-    /* position: absolute; */
     float: left;
     z-index: 99
 }
 .mission-state .img-wrapper img{
     height: 20vh;
 }
-.home-page-item .img-wrapper{
+.main-item > .img-wrapper{
     float: right;
-
+    
+}
+.main-item > .content .img-wrapper{
+    float: left;
 }

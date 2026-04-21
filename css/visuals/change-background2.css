@@ -1,0 +1,41 @@
+.home-page-header {
+    /* .contact-container>.address-num-container { */
+    background-image: url('../../imgs/rustic\ rockymoutains-1024.JPEG');
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
+    background-position-y: 49%;
+    background-position-x: 0%;
+    filter: grayscale(50%);
+}
+.bg-slider{
+    min-height: 30vh;
+}
+.bg-slide {
+    /* position: absolute; */
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    
+    background-position-x: 40%;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.contact-container>*:not(.bg-slide) {
+    position: relative;
+    z-index: 2;
+}
+/* visible slide */
+.bg-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* optional safety reset */
+.bg-slide.hidden {
+    opacity: 0;
+    z-index: 0;
+}
