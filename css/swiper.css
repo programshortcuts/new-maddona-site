@@ -12,11 +12,8 @@
     width: 100%;
 }
 .swiper-slide {
+    font-size: 1.35rem;
     width: 100%;
-    /* background: transparent; */
-    /* background-color: blue; */
-    /* padding: 7% 3%; */
-    font-size: 1.45rem;
     text-align: center;
     border: none;
     box-shadow: none;
