@@ -2,9 +2,12 @@
 .page-header .page-title-container h1 span{
     white-space: nowrap;
 }
+body{
+    overflow: hidden;
+}
 .page-wrapper {
     display: flex;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     flex-direction: column;
 }
 .main-landing-page {
