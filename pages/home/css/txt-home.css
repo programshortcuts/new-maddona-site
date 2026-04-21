@@ -3,5 +3,8 @@
 .home-page-container section p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
+}
 
+.reviews-address-container>.address-num-container>p {
+    font-size: 1.8rem;
 }

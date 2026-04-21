@@ -1,11 +1,7 @@
 /* borders-home.css */
-
-.home-page-item p {
-    /* border: 1px solid blue; */
-    
-}
-.home-page-header img#officeImg{
-
-    border-radius: 8px;
+.reviews-address-container>.address-num-container > p{
+    /* border: ; */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    color: white
 }
 
