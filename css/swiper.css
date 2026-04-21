@@ -1,10 +1,14 @@
 /* swiper.css */
 .reviews-container {
     /* spa-style soft beige */
+    margin-top: 10%;
 }
-.swiper{
-
+.swiper {
+    width: 100%;
+    max-width: 50vw;
     background: #f6f1eb;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 .swiper-wrapper{
     display: flex;
@@ -12,11 +16,13 @@
 .swiper-slide {
     /* background: transparent; */
     /* background-color: blue; */
-    padding: 10% 5%;
-    font-size: 2rem;
+    padding: 7% 3%;
+    
+    font-size: 1.5rem;
     text-align: center;
     border: none;
     box-shadow: none;
+    
     color: #fff;
     /* if your bg is dark */
 }

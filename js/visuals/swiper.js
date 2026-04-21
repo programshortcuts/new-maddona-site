@@ -1,28 +1,18 @@
 export function initSwiper() {
-    const el = document.querySelector('.swiper');
-    if (!el) {
+    const swiperEl = document.querySelector('.swiper');
+    const reviewsContainer = document.querySelector('.reviews-container');
+
+    if (!swiperEl) {
         console.log('Swiper not found');
         return;
     }
 
-    // new Swiper(el, {
-    //     slidesPerView: 1,
-    //     loop: true,
-    //     grabCursor: true,
-    //     spaceBetween: 20, // nice spacing
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true
-    //     }
-    // });
-    new Swiper(el, {
+    const swiper = new Swiper(swiperEl, {
         slidesPerView: 1,
         loop: true,
         grabCursor: true,
-
         spaceBetween: 1,
-
-        speed: 1000, // 👈 THIS controls slide animation duration
+        speed: 1000,
 
         pagination: {
             el: '.swiper-pagination',
@@ -30,8 +20,22 @@ export function initSwiper() {
         },
 
         autoplay: {
-            delay: 2000,  // 👈 time BETWEEN slides
+            delay: 2000,
             disableOnInteraction: false
         }
     });
+
+    let isPaused = false;
+
+    if (reviewsContainer) {
+        reviewsContainer.addEventListener('click', () => {
+            if (!swiper.autoplay) return;
+            if (isPaused) {
+                swiper.autoplay.start();
+            } else {
+                swiper.autoplay.stop();
+            }
+            isPaused = !isPaused;
+        });
+    }
 }

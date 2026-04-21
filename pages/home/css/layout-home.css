@@ -6,6 +6,9 @@
 .home-page-header {
     display: flex;
 }
+.home-page-header .contact-content{
+    padding-top: 5%;
+}
 .home-page-header .img-wrapper{
     flex-basis: 20%;
 }

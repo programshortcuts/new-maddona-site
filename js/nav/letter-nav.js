@@ -92,13 +92,13 @@ export function initLetterNav({
             const text = (el.textContent || '').trim().toLowerCase();
             return text.match(/[a-z]/)?.[0] || '';
         };
-        console.log(
-            allEls.map(el => ({
-                text: el.innerText,
-                alpha: firstAlpha(el),
-                el
-            }))
-        );
+        // console.log(
+        //     allEls.map(el => ({
+        //         text: el.innerText,
+        //         alpha: firstAlpha(el),
+        //         el
+        //     }))
+        // );
         const matching = allEls.filter(el => firstAlpha(el) === key);
         if (!matching.length) return;
 
