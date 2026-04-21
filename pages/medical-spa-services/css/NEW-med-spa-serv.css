@@ -1,17 +1,9 @@
 /* NEW-med-spa-serv.css - Consolidated OLD style CSS */
 /* ===== LAYOUT ===== */
-.page-container.med-spa-serv-container {
-    
-    margin: 0 5%;
-    padding: 0 2%;
-    padding-top: 3%;
-}
+
 
 .med-spa-serv-container > .section {
-    margin-top: 1%;
-    padding-top: 1.25rem;
-    padding-bottom: .5rem;
-    padding-left: 0;
+    
     border-radius: 3px;
 }
 
