@@ -1,23 +1,17 @@
 /* sizing-home.css*/
-.page-container.home-page-container {
-    width: 100%;
+.mission-state > img {
+    height: 30vh;
+    border-radius: 60px;
+    margin-right: 3%;
 }
-section img {
-    /* max-height: 160px; */
-    max-width:  100px;
+.mission-state > p {
+    padding-top: 2%;
 }
-#iconShilouette{
-    max-width: 150px;
-}
-.home-page-header .contact-content > .img-wrapper{
+
+.home-page-item .content>.img-wrapper {
     height: fit-content;
+    width: fit-content;
 }
-.home-page-header .contact-content > .img-wrapper > img{
-    width: 44vw;
-    max-width: 500px;
-    height: 10vh;
-}
-.address-num-container p {
-    width: 59%;
-    
+.home-page-item .content>.img-wrapper > img{
+    height: 20vh;
 }

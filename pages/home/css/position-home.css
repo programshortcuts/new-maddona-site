@@ -1,39 +1,15 @@
 /* position-home.css */
-.home-page-header {
-    /* float: left; */
+.mission-state>img {
+    float: left;
 }
-article.mission-state {
-    position: relative;
-}
-.home-page-container .address-num-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.mission-state > .animation-container {
-    float: right;
-}
+
 .home-page-container .animation-container::after,
 .home-page-header::after{
     content: "";
     display: block;
     clear: both;
 }
-.home-page-container .mission-state .section{
 
-    clear: both;
-}
-.home-page-container .section>.content>.img-wrapper {
-    float: left;
-}
-.home-page-container .section>.content>.img-wrapper::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-.home-page-container .section>.content img {
-    display: block;
-}
-.home-page-container .section#longevitySupport > .content > .img-wrapper{
-    float: right !important;
+.home-page-item .content > .img-wrapper{
+    float:right
 }

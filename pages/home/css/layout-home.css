@@ -3,6 +3,10 @@
 .home-page-header .img-wrapper {
     flex-basis: 20%;
 }
+.home-page-header button.section-title{
+    display: block;
+
+}
 
 .reviews-container {
     /* font-size: ; */
@@ -33,10 +37,10 @@
 .reviews-address-container {
     display: flex;
     flex-direction: column;
-    /* spa-style soft beige */
-    /* margin-top: 10%; */
     justify-content: center;
 }
+
 .home-page-item{
-    display: flex
+    /* display: flex */
+
 }
