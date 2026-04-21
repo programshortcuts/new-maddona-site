@@ -2,17 +2,20 @@
 .swiper {
     width: 100%;
     max-width: 40vw;
-    max-height: 10vh;
+    max-height: 8vh;
     background: #f6f1eb;
+    background-color: whitesmoke;
     border: 1px solid black;
-    border-radius: 3px;
+    border: 1px solid black;
+    border-radius: 33px;
 }
 .swiper-wrapper{
     display: flex;
     width: 100%;
 }
 .swiper-slide {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
+    
     width: 100%;
     text-align: center;
     border: none;
@@ -28,4 +31,6 @@
 .swiper-slide p {
     /* text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); */
     color: black;
+    padding: 1%;
+    padding-bottom: 0;
 }
