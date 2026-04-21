@@ -20,7 +20,9 @@ export function initSwiper() {
         loop: true,
         grabCursor: true,
 
-        spaceBetween: 10,
+        spaceBetween: 1,
+
+        speed: 1000, // 👈 THIS controls slide animation duration
 
         pagination: {
             el: '.swiper-pagination',
@@ -28,8 +30,8 @@ export function initSwiper() {
         },
 
         autoplay: {
-            delay: 3000,   // ⏱ time between slides (ms)
-            disableOnInteraction: false // keeps autoplay after user swipes
+            delay: 2000,  // 👈 time BETWEEN slides
+            disableOnInteraction: false
         }
     });
 }
