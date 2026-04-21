@@ -22,6 +22,7 @@
 .page-wrapper
 {
     background-color: var(--bg-clr);
+    background-color: olivedrab;
 }
 
 .animation-container {
