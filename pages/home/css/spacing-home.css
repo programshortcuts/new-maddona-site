@@ -1,9 +1,13 @@
 /* spacing-home.css */
 .home-page-container{
+    /* margin: 0 5%; */
     margin-top: 10%;
+    padding-right: 20%;
 }
 .address-num-container .address-box{
     padding: 2%
+}
+.mission-state{
 }
 .mission-state>img {
     margin-right: 3%;

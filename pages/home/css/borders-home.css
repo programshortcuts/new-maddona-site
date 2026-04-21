@@ -1,6 +1,6 @@
 /* borders-home.css */
 
-.mission-state>img {
+.mission-state> .img-wrapper img {
     border-radius: 60px;
     margin-right: 3%;
 }

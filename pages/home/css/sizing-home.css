@@ -3,7 +3,7 @@
     width: 110%;
     height: 10vh;
 }
-.mission-state>img {
+.mission-state>.img-wrapper {
     height: 20vh;
 }
 .mission-state > p {
