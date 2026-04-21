@@ -21,3 +21,7 @@
     font-style: bold;
 
 }
+.more-info-links > a {
+    background-color: white !important;
+    
+}
