@@ -1,7 +1,10 @@
 /* swiper.css */
 .reviews-container {
-    background: #f6f1eb;
     /* spa-style soft beige */
+}
+.swiper{
+
+    background: #f6f1eb;
 }
 .swiper-wrapper{
     display: flex;
@@ -24,5 +27,6 @@
     text-shadow: 2px -1px 2px black;
 }
 .swiper-slide p {
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    /* text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); */
+    color: black;
 }
