@@ -1,0 +1,15 @@
+/* responsive-med-spa-serv.css */
+
+/* Add smooth transition for background position movement */
+#botoxAndFillers {
+    transition: background-position-x 0.3s ease;
+}
+
+/* Responsive behavior for background position */
+@media screen and (min-width: 771px) {
+    #botoxAndFillers {
+        /* background-repeat: ; */
+        overflow: hidden;
+        background-position-x: -10% !important;
+    }
+}

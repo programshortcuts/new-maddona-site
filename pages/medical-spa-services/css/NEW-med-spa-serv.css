@@ -8,9 +8,10 @@
 
 /* ===== LAYOUT ===== */
 .page-container.med-spa-serv-container {
-    width: 100%;
-    margin: 0 2%;
-    padding-bottom: 18%;
+    width: 100vw;
+    margin: 0 5%;
+    padding: 0 2%;
+    padding-top: 3%;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -61,11 +62,15 @@ section::after {
 }
 
 #botoxAndFillers {
+    width: 90%;
+    margin-right: 50%;
     min-height: 12vh;
-    background-image: url('../../pages/medical-spa-services/media/botox-filler.webp');
-    background-repeat: no-repeat;
+    background-image: url('../../../pages/medical-spa-services/media/botox-filler.jpg.webp');
+    /* background-image: url('../../../pages/medical-spa-services/media/botox-filler-grey.webp'); */
+    /* background-repeat: no-repeat; */
     background-position-y: 50%;
-    background-position-x: -2%;
+    background-position-x: -0% !important;
+    /* background-size: 200%; */
     filter: saturate(1);
     filter: brightness(1);
     border-right: 1vw solid var(--bg-clr);
@@ -77,12 +82,20 @@ section::after {
 
 /* ===== TYPOGRAPHY ===== */
 .section > h2 {
-    color: var(--font-p-clr);
+    /* color: var(--font-p-clr); */
 }
 
-.section-title,
-.page-title {
+/* .page-title  */
+.section-title
+{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
     color: var(--font-p-clr);
+    display: block;
+    background-color: inherit;
+    border: none;
+
 }
 
 .med-spa-serv-container > .section > h2 > a.section-title {
@@ -220,13 +233,7 @@ section iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-style: italic;
-    color: #555;
-}
+
 
 .review-author {
     margin-top: 10px;
@@ -240,11 +247,6 @@ section iframe {
 .stars {
     color: #f5c518;
     font-size: 1.2rem;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #333;
 }
 
 .swiper-pagination-bullet {
@@ -262,13 +264,6 @@ section iframe {
     border-radius: 20px;
     width: 100%;
     height: 100%;
-}
-
-/* ===== ANIMATIONS ===== */
-.text, .logo {
-    width: 100%;
-    text-align: center;
-    transition: opacity 2s ease;
 }
 
 /* ===== RESPONSIVE ===== */
