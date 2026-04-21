@@ -1,5 +1,7 @@
 /* borders-home.css */
-
+.home-page-header button.section-title{
+    border: none;
+}
 .mission-state> .img-wrapper img {
     border-radius: 60px;
     margin-right: 3%;

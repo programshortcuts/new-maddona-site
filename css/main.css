@@ -21,6 +21,7 @@
 
 /* home-styles */
 @import url('../pages/home/css/NEW-home.css');
+@import url('../pages/home/css/bkgrnd-home.css');
 @import url('../pages/home/css/borders-home.css');
 @import url('../pages/home/css/txt-home.css');
 @import url('../pages/home/css/layout-home.css');

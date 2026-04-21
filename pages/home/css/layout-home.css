@@ -9,9 +9,8 @@
 .home-page-header .img-wrapper {
     flex-basis: 10%;
 }
-.home-page-header button.section-title{
+.home-page-container button.section-title{
     display: block;
-
 }
 
 .reviews-container {
