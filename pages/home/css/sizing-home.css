@@ -7,7 +7,7 @@
     height: 10vh;
 }
 .mission-state>.img-wrapper {
-    height: 10vh;
+    /* height: 20vh; */
 }
 .mission-state > p {
     padding-top: 2%;

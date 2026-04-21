@@ -9,7 +9,6 @@
 .address-num-container>p {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     color: white;
-    text-align: end;
     font-size: 1.35rem;
 }
 .home-page-container button.section-title{

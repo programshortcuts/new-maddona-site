@@ -1,16 +1,22 @@
 /* spacing-home.css */
-.home-page-header>.contact-content>.img-wrapper>img {margin-left: 5%;
+.home-page-header>.contact-content>.img-wrapper>img {
+    margin-left: 5%;
 }
-.home-page-container{margin-top: 10%;}
-.main-item {margin-bottom: 2%;}
+.home-page-container{
+    /* margin: 0 5%; */
+    margin-top: 10%;
+}
+.main-item {
+    margin-bottom: 2%;
+}
+
 .address-num-container .address-box{
-    padding: 2%;
-    margin-right: 3;
+    padding: 2%
 }
 .mission-state{
 }
-.mission-state > .img-wrapper {
-    margin-right: 5% !important;
+.mission-state>img {
+    margin-right: 3%;
  }
  .address-num-container {
     padding: 0 5%;
@@ -19,9 +25,9 @@
  }
  .mission-state {
      padding-right: 15%;
-     padding-top: 5%;
  }
 
-.mission-state>p{
-    padding: 0 2%;
+.mission-state>p {
+    padding-top: 10%;
+    padding-left: 3%;    
 }
