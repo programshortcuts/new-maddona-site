@@ -1,7 +1,13 @@
 /* layout-med-spa-serv.css */
-.med-spa-serv-container {
+.page-container.med-spa-serv-container {
+    overflow: hidden;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
 }
-
-.med-spa-serv-container .section {}
+.section-title {
+    display: block;
+}
+.more-info-links {
+    display: flex;
+}
