@@ -42,7 +42,7 @@
 /* @import url('../pages/medical-spa-services/css/colors-med-spa-serv.css'); */
 
 /* products-styles */
-@import url('../pages/products/css/animations/items-scroll.css');
+@import url('../ui/items-scroll.css');
 @import url('../pages/products/css/borders-products.css');
 @import url('../pages/products/css/colors-products.css');
 @import url('../pages/products/css/layout-products.css');
