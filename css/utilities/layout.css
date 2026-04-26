@@ -2,10 +2,18 @@
 .page-header .page-title-container h1 span{
     white-space: nowrap;
 }
-.page-wrapper {
-    display: flex;
+body{
+
     overflow-x: hidden;
+}
+.page-wrapper {
+    width: 100vw;
+    display: flex;
     flex-direction: column;
+}
+.main-landing-page {
+    /* overflow: hidden; */
+    overflow-x: scroll;
 }
 .page-header {
     display: flex;
@@ -27,10 +35,7 @@ li#contactNavLink {
     min-width: 0;
     /* 🔥 allows shrinking */
 }
-.mobile-header-nav > ul > li > a {
-    display: inline-block;
-    text-align: center;
-}
+
 .social-media-container {
     display: flex;
     flex-direction: column;
@@ -49,6 +54,10 @@ li#contactNavLink {
     max-width: 100%;
 }
 
+.mobile-header-nav li a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .mobile-header-nav > ul > li > ul {
     display: none;
     flex-direction: column;
@@ -56,4 +65,8 @@ li#contactNavLink {
 }
 .mobile-header-nav > ul > li > ul > li{
     width: 120%;
+ }
+ .mobile-header-nav>ul>li>a {
+     display: inline-block;
+     text-align: center;
  }
