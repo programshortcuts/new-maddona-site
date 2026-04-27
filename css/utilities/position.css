@@ -6,20 +6,12 @@
 .page-wrapper{
     position: relative;
 }
-.page-header{
-    position: fixed;
-    z-index: 1;
-}
-.page-header .img-wrapper{
-    position: absolute;
-    right: 0%;
-}
 
-.social-media-link-container {
+
+.mobile-header-nav .social-media-link-container {
     position: relative;
 }
-.social-media-link-container a{
-}
+
 .mobile-header-nav {
     position: fixed;
     z-index: 2;

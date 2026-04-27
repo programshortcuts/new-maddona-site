@@ -1,9 +1,6 @@
 /* layout.css */
-.page-header .page-title-container h1 span{
-    white-space: nowrap;
-}
-body{
 
+body{
     overflow-x: hidden;
 }
 .page-wrapper {
@@ -15,10 +12,7 @@ body{
     /* overflow: hidden; */
     overflow-x: scroll;
 }
-.page-header {
-    display: flex;
-    
-}
+
 .mobile-header-nav ul {
     display: flex;
 }

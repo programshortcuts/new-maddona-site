@@ -2,6 +2,9 @@
 @import url('visuals/animations.css');
 /* @import url('visuals/carousel.css'); */
 @import url('swiper.css');
+
+@import url('components/page-header.css');
+
 /* ui */
 @import url('ui/toggle-nav.css');
 
