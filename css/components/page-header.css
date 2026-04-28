@@ -21,15 +21,15 @@
 .page-header .img-wrapper img {
     height: 15vh !important;
 }
+
+.page-container-title {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
 .page-header .page-title {
     text-decoration: none;
     letter-spacing: 20%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.page-container-title {
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 .page-header .tel-num {
